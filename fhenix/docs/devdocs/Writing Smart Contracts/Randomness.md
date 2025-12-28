@@ -1,18 +1,18 @@
 ---
 sidebar_position: 9
 title: 🎲 Randomness
-description: How to generate random numbers in Fhenix
+description: How to generate random numbers in luxfhe
 ---
 # 🎲 Randomness
 
 Randomness was introduced in the Nitrogen testnet.
-Contracts in Fhenix can get random numbers by calling one of the randomness functions in `FHE.sol`.
+Contracts in luxfhe can get random numbers by calling one of the randomness functions in `FHE.sol`.
 These functions are:
 
 ```solidity
 import {
     FHE, euint8, euint16, euint32, euint64, euint128, euint256
-} from "@fhenixprotocol/contracts/FHE.sol";
+} from "@luxfheprotocol/contracts/FHE.sol";
 
 euint8 randomValue = FHE.randomEuint8();
 euint16 randomValue = FHE.randomEuint16();
@@ -26,7 +26,7 @@ Note that the random values are returned as encrypted values.
 This is a fundamental quality of randomness generation, because if the returned value
 was plaintext, then it would be possible to simulate the execution and predict the random value.
 
-To see the randomness functions as part of a full example take a look at the [rng-binary-guessing-game](https://github.com/FhenixProtocol/rng-binary-guessing-game-demo) example repo.
+To see the randomness functions as part of a full example take a look at the [rng-binary-guessing-game](https://github.com/luxfheProtocol/rng-binary-guessing-game-demo) example repo.
 
 ### Best practice: Ensure caller is not a Contract
 

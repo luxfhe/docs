@@ -1,12 +1,12 @@
 ---
 sidebar_position: 2
-title: 📐 Fhenix Architecture
+title: 📐 luxfhe Architecture
 ---
 
-Our goal with Fhenix is not only to provide the first FHE-based L2 solution, but also to create a platform that is modular, flexible, and can easily be changed, extended or improved as we see
+Our goal with luxfhe is not only to provide the first FHE-based L2 solution, but also to create a platform that is modular, flexible, and can easily be changed, extended or improved as we see
 traffic, use-cases and requirements evolve.
 
-The Fhenix Protocol is composed of several components that work together to provide a secure and private environment for smart contracts. The main components are:
+The luxfhe Protocol is composed of several components that work together to provide a secure and private environment for smart contracts. The main components are:
 
 * Core Chain (based on Arbitrum Nitro)
 * FheOS
@@ -14,11 +14,11 @@ The Fhenix Protocol is composed of several components that work together to prov
 
 These components are layered together to provide a modular approach, that allows for a flexible architecture 
 
-![](/img/fhenix-stack.webp)
+![](/img/luxfhe-stack.webp)
 
 ### Core Chain
 
-The Core Blockchain is the base layer of the Fhenix Protocol. It is based on Arbitrum Nitro, which is a Layer 2 scaling solution for Ethereum. Arbitrum Nitro is a rollup chain that uses a combination of fraud proofs and optimistic rollups to provide a scalable and secure environment for smart contracts.
+The Core Blockchain is the base layer of the luxfhe Protocol. It is based on Arbitrum Nitro, which is a Layer 2 scaling solution for Ethereum. Arbitrum Nitro is a rollup chain that uses a combination of fraud proofs and optimistic rollups to provide a scalable and secure environment for smart contracts.
 
 The Core Blockchain is responsible for processing transactions, executing smart contracts, and maintaining the state of the blockchain.
 

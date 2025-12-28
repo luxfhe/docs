@@ -7,7 +7,7 @@ The gas prices are subject to change based on usage and performance.
 The current gas limit for a transaction is set to be 50 million
 :::
 
-New for Fhenix Kimchi Testnet we changed the calculation of TX data, which previously was heavily discounted artificially.
+New for luxfhe Kimchi Testnet we changed the calculation of TX data, which previously was heavily discounted artificially.
 The new calculation should be similar to default EVM for most transactions.
 
 The new formula offers a discount of 75% for any data over 64KB, with default EVM costs per byte otherwise (64 gas units per non-zero byte, or 4 gas for zero).

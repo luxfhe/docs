@@ -1,22 +1,22 @@
 # 🛠️ Foundry
 
-This tool will allow you to simulate development on the Fhenix network including Solidity native testing.
-The tool uses Foundry Cheatcodes to represent the execution of our Fhenix native precompiles. 
+This tool will allow you to simulate development on the luxfhe network including Solidity native testing.
+The tool uses Foundry Cheatcodes to represent the execution of our luxfhe native precompiles. 
 Please be aware that the operations performed by using this template only simulate the behavior of real FHE operations, and will probably not be a good representation of performance, gas, etc. 
 
 The code is pretty new, and may contain bugs or edge-cases that we have not tested, so your feedback is very important for us! If you have any issues, comments or requests please open an issue
-in the Fhenix Foundry Template [Repository](https://github.com/FhenixProtocol/fhenix-foundry-template).
+in the luxfhe Foundry Template [Repository](https://github.com/luxfheProtocol/luxfhe-foundry-template).
 
 ## Getting Started
 
-To create a new repository using our [Fhenix Foundry Template](https://github.com/FhenixProtocol/fhenix-foundry-template), click the
-[`Use this template`](https://github.com/fhenixprotocol/fhenix-foundry-template/generate) button.
+To create a new repository using our [luxfhe Foundry Template](https://github.com/luxfheProtocol/luxfhe-foundry-template), click the
+[`Use this template`](https://github.com/luxfhe/luxfhe-foundry-template/generate) button.
 Alternatively, install the template manually as follows:
 
 ```sh
 $ mkdir my-project
 $ cd my-project
-$ forge init --template fhenixprotocol/fhenix-foundry-template
+$ forge init --template luxfheprotocol/luxfhe-foundry-template
 $ bun install # install Solhint, Prettier, and other Node.js deps
 ```
 
@@ -45,7 +45,7 @@ which is accessible via the vm property. To view the logs in the terminal output
 
 #### Add support for FHE operations
 
-This template includes an example test contract [FHERC20.t.sol](https://github.com/FhenixProtocol/fhenix-foundry-template/blob/main/test/FHERC20.t.sol).
+This template includes an example test contract [FHERC20.t.sol](https://github.com/luxfheProtocol/luxfhe-foundry-template/blob/main/test/FHERC20.t.sol).
 
 For contracts utilizing FHE operations, insert FHE mock operations using the `FheEnabled` contract. By inheriting the
 `FheEnabled` contract in the test contract, you gain access to FHE operations. The following code demonstrates this.
@@ -128,7 +128,7 @@ operations:
 - Ciphertext Access – The mocked FHE operations do not enforce access control restrictions on ciphertexts, which allows
   any user to access any mocked "ciphertext." On a real network, such operations could fail.
 - Decrypts during Gas Estimations: When performing a decrypt (or other data revealing operations) during gas estimation
-  on the Helium testnet or Localfhenix, the operation returns a default value, as the gas estimation process does not
+  on the Helium testnet or Localluxfhe, the operation returns a default value, as the gas estimation process does not
   have access to the precise decrypted data. This can cause the transaction to fail at this stage, if the decrypted data
   is used in a way that would trigger a transaction revert (e.g., when a require statement depends on it).
 - Security – The security provided by the mocked FHE operations does not represent the high level of security offered by

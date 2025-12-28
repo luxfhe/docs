@@ -24,7 +24,7 @@ To understand why FHE operations (including decryption) are asynchronous, [read 
 
 ## Decryption in query vs. in transaction
 
-Fhenix provides two primary ways to perform decryption, each suited for different use cases:
+luxfhe provides two primary ways to perform decryption, each suited for different use cases:
 
 #### **1. Decryption via Solidity Contract Transaction**
 Decryption is requested in a smart contract transaction, storing the result on-chain for all to access. This ensures auditability but incurs higher gas costs and makes the result public.
@@ -117,7 +117,7 @@ As with all FHE operations, you must have permission to decrypt a ciphertext. Re
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.19 <0.9.0;
 
-import "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import "@luxfheprotocol/cofhe-contracts/FHE.sol";
 
 contract AuctionExample {
   address private auctioneer;

@@ -1,5 +1,5 @@
 ---
-title: Research in Fhenix
+title: Research in luxfhe
 sidebar_position: 10
 ---
 

@@ -39,13 +39,13 @@ function HomepageHeader() {
 
                           <Heading as="h1" className="hero__title">
                               { /* siteConfig.title */} 
-                              <img className="fhenix-logo" alt="fhenix image" src="img/assets/dark-text-logo.svg"/>
+                              <img className="luxfhe-logo" alt="luxfhe image" src="img/assets/dark-text-logo.svg"/>
                           </Heading>
                       </div>
                       <div className="row">
                           {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
                           <p className="home__description">
-                          <span>Tools and resources to help you build, launch, and grow your app on Fhenix.</span>
+                          <span>Tools and resources to help you build, launch, and grow your app on LuxFHE.</span>
                           </p>
                       </div>
                       <div className={clsx("row", styles.ButtonRow)} style={{ marginLeft: -30 , gap: '31px'}}>
@@ -98,7 +98,7 @@ function HomepageHeader() {
 
                   <div className="hide-small-width" style={{marginTop: "40px", position: 'relative', overflow: 'visible'}}>
                     {/* <div className="" style={{marginTop: "-100px"}}> */}
-                    <img className="page-cover-image" alt="fhenix stuttershock image" src="img/BookLight.svg" style={{maxWidth: '600px'}}/>
+                    <img className="page-cover-image" alt="luxfhe stuttershock image" src="img/BookLight.svg" style={{maxWidth: '600px'}}/>
                     <div style={{
                         position: 'absolute',
                         top: '-25%',
@@ -148,7 +148,7 @@ export default function Home(): JSX.Element {
 
     return (
         <Layout title={`${siteConfig.title}`}
-                description="Documentation for Fhenix, the pioneering FHE-enabled L2. Explore how Fhenix is transforming privacy in Blockchain.">
+                description="Documentation for LuxFHE, the pioneering FHE-enabled L2. Explore how LuxFHE is transforming privacy in Blockchain.">
             {init}
             <HomepageHeader />
             <main style={{ position: 'relative', zIndex: 1 }}>

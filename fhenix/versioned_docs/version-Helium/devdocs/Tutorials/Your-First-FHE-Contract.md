@@ -5,14 +5,14 @@ displayed_sidebar: docsSidebar
 
 # Your First FHE Contract
 
-In this short guide, we'll demonstrate how simple it is to enable confidentiality in your smart contracts using Fhenix.
+In this short guide, we'll demonstrate how simple it is to enable confidentiality in your smart contracts using luxfhe.
 
 
 ```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-import "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/FHE.sol";
 
 contract EarlyWin {
     uint8 _plaintext;
@@ -43,7 +43,7 @@ First, FHE is imported directly into your contract with a single line of code. N
 1. **Importing FHE**
 
    ```javascript
-   import "@fhenixprotocol/contracts/FHE.sol";
+   import "@luxfheprotocol/contracts/FHE.sol";
    ```
 
    We can import the FHE precompiles directly into the smart contract with a single line of code. The power of FHE in one single line of copy-paste.
@@ -87,13 +87,13 @@ First, FHE is imported directly into your contract with a single line of code. N
    }
    ```
 
-   Finally, we call the decrypt function to convert the private number to a public one. The method on line 21 represents an example of synchronous decryption. Fhenix will eventually move to an asynchronous decryption call. Don't worry, it will still be possible, and we will update you when the implementation is ready.
+   Finally, we call the decrypt function to convert the private number to a public one. The method on line 21 represents an example of synchronous decryption. luxfhe will eventually move to an asynchronous decryption call. Don't worry, it will still be possible, and we will update you when the implementation is ready.
 
 ## Next Steps
 
-If you want to learn more about working with Fhenix, please check out [docs for a development tutorial](../Tutorials/Basic/intro). Here, you will learn how to set up your local dev environment and create an encrypted ERC-20 token!
+If you want to learn more about working with luxfhe, please check out [docs for a development tutorial](../Tutorials/Basic/intro). Here, you will learn how to set up your local dev environment and create an encrypted ERC-20 token!
 
-[//]: # (Or, [click here to check out part 2 of our easy win guide]&#40;#&#41;, where we go over Fhenix principles 101 on Remix. Learn how to handle operations, conditional logic, and permissions &#40;viewing encrypted fields&#41;.)
+[//]: # (Or, [click here to check out part 2 of our easy win guide]&#40;#&#41;, where we go over luxfhe principles 101 on Remix. Learn how to handle operations, conditional logic, and permissions &#40;viewing encrypted fields&#41;.)
 
 ### Have Questions?
 

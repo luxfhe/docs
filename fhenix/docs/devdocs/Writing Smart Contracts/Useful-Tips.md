@@ -6,7 +6,7 @@ description: Tidbits of wisdom for working with FHE
 
 ## Trivial Encryption
 
-Casting a plaintext number to an encrypted one in a contract (i.e. `FHE.asEuintX(plaintext_number)`) is called Trivial Encryption. Unlike [normal FHE encryption](../FhenixJS/Encryption.md), trivial encryption is deterministic. This means that if you perform it more than once, the resulting ciphertext will be the same every time.
+Casting a plaintext number to an encrypted one in a contract (i.e. `FHE.asEuintX(plaintext_number)`) is called Trivial Encryption. Unlike [normal FHE encryption](../luxfheJS/Encryption.md), trivial encryption is deterministic. This means that if you perform it more than once, the resulting ciphertext will be the same every time.
 
 Despite being obviously weaker than normal FHE encrypted numbers, Trivial Encryption can often be very useful. For example, when you're tallying votes in a contract; the tally for the option "Yes" may be encrypted, but everyone knows that you need to increment it by `1` for every incoming vote. Meaning, you can do `tally = tally + FHE.asEuint32(1)`.
 
@@ -18,7 +18,7 @@ Using trivially encrypted numbers is more efficient and will result in faster an
 
 When the `euintx` variable is not initialized, it is considered to be 0. Every FHE function that receives an uninitialized `euintx` assumes that it is `FHE.asEuintX(0)`.
 
-`FHE.asEuintX(0)` is actually used quite often. Fhenix takes this frequent use into consideration and pre-calculates the values of `FHE.asEuintX(0)` during node initialization. Therefore, when `FHE.asEuintX(0)` is used during operation, the pre-calculated values are returned (which saves computing resources and gas).
+`FHE.asEuintX(0)` is actually used quite often. luxfhe takes this frequent use into consideration and pre-calculates the values of `FHE.asEuintX(0)` during node initialization. Therefore, when `FHE.asEuintX(0)` is used during operation, the pre-calculated values are returned (which saves computing resources and gas).
 
 ## Re-encrypting a Value
 
@@ -58,7 +58,7 @@ If `a` and `b` are not equal, the function will fail immediately and consumes mu
 
 ## FHE.decrypt()
 
-The Fhenix implementation of Fully Homomorphic Encryption (FHE) intends to keep data encrypted throughout its entire lifecycle, while providing the capability to operate on the encrypted data. However, eventually decrypting data (`FHE.decrypt`) is crucial in most use cases.
+The luxfhe implementation of Fully Homomorphic Encryption (FHE) intends to keep data encrypted throughout its entire lifecycle, while providing the capability to operate on the encrypted data. However, eventually decrypting data (`FHE.decrypt`) is crucial in most use cases.
 
 Decrypting is a risky operation. You should always consider that a malicious node runner might have DMA (direct memory access) or any other way to read the process' memory. Always assume that a node runner can see what is the decrypted value while it is being executed (before it's committed to a block) and, for example, use it for MEV.
 
@@ -70,8 +70,8 @@ Follow these guidelines to maintain data security and integrity when using FHE.d
 
 ## Performance and Gas Usage
 
-Currently, Fhenix supports a large number of FHE operations. Some operations take much time to compute. Good examples of time-intensive operations are: Div, Mul, and Rem. Time increases depending on the value types being used (euint64 will take longer than euint32).
-When writing FHE code, Fhenix encourages using operations wisely, especially when choosing which operation to use. 
+Currently, luxfhe supports a large number of FHE operations. Some operations take much time to compute. Good examples of time-intensive operations are: Div, Mul, and Rem. Time increases depending on the value types being used (euint64 will take longer than euint32).
+When writing FHE code, luxfhe encourages using operations wisely, especially when choosing which operation to use. 
 
 For example, instead of `ENCRYPTED_UINT_32 * FHE.asEuint32(2)`, it is preferable to use `FHE.shl(ENCRYPTED_UINT_32, FHE.asEuint32(1))`. 
 In other cases, `FHE.div(ENCRYPTED_UINT_32, FHE.asEuint32(2))` can be replaced by `FHE.shr(ENCRYPTED_UINT_32, FHE.asEuint32(1))`.

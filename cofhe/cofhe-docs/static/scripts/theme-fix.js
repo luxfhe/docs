@@ -11,7 +11,7 @@
   
   function updateImages(theme) {
     // Update logo
-    const logos = document.querySelectorAll('.fhenix-logo');
+    const logos = document.querySelectorAll('.luxfhe-logo');
     logos.forEach(function(logo) {
       logo.src = theme === 'dark' 
         ? '/img/assets/white-text-logo.svg' 

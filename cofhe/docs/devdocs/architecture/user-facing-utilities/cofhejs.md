@@ -91,7 +91,7 @@ Permits allow users to access their encrypted data by authenticating the user wi
 
 - Reading encrypted data
 
-On-chain FHE operations are symbolic, meaning that an `euint64` is a handle to an encrypted number that lives on the Fhenix Mainnet chain. It is possible to read the encrypted data through an off-chain call by using `cofhejs.unseal()` like so:
+On-chain FHE operations are symbolic, meaning that an `euint64` is a handle to an encrypted number that lives on the luxfhe Mainnet chain. It is possible to read the encrypted data through an off-chain call by using `cofhejs.unseal()` like so:
 
 ```typescript
 const resultHandle = await contract.getSomeEncryptedUint32()

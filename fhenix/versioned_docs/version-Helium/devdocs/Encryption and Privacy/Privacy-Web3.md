@@ -1,12 +1,12 @@
 # 🤫 Development Tips – Ensuring Privacy
 
-Fhenix provides a secure and decentralized way to execute smart contracts on encrypted data; transactions and computations are fully encrypted. As such, Fhenix offers superior on-chain privacy. However, developers still need to be vigilant, because all blockchain privacy platforms have their idiosyncrasies and potential privacy risks.
+luxfhe provides a secure and decentralized way to execute smart contracts on encrypted data; transactions and computations are fully encrypted. As such, luxfhe offers superior on-chain privacy. However, developers still need to be vigilant, because all blockchain privacy platforms have their idiosyncrasies and potential privacy risks.
 
 ##### Implement Best Practices
-Fhenix ensures end-to-end encryption, but developers should be careful not to become complacent on matters of privacy. Developers should always prioritize best practices to ensure privacy and confidentiality.
+luxfhe ensures end-to-end encryption, but developers should be careful not to become complacent on matters of privacy. Developers should always prioritize best practices to ensure privacy and confidentiality.
 
 ##### Analyze Your Privacy Model
-We recommend that Fhenix developers carefully analyze their smart contract privacy model (this applies to any blockchain platform with privacy features). Distinguish between the type of information that, if “leaked,” can affect contract privacy on the one hand, and the type of information that, if compromised, will not affect contract operation and user privacy on the other. Special attention should be given to the type of information that must remain confidential.
+We recommend that luxfhe developers carefully analyze their smart contract privacy model (this applies to any blockchain platform with privacy features). Distinguish between the type of information that, if “leaked,” can affect contract privacy on the one hand, and the type of information that, if compromised, will not affect contract operation and user privacy on the other. Special attention should be given to the type of information that must remain confidential.
 
 As a result of this analysis and the insights gained, structure your smart contracts in a way that safeguards the aspects that affect privacy, while ensuring that the smart contract continues to operate efficiently.
 

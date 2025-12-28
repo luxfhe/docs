@@ -53,7 +53,7 @@ function getNumber() public view returns (euint64) {
 ### 📌 Step 2: Integration with Cofhejs
 
 1. The decentralized application (dApp) integrates with CoFHE by utilizing **Cofhejs** for encryption.
-   [See in GitHub](https://github.com/FhenixProtocol/cofhejs)
+   [See in GitHub](https://github.com/luxfheProtocol/cofhejs)
 
 2. [Create a permit](../../cofhejs/permits-management.md) using `cofhejs.createPermit(...)`. This permit will automatically be used in the following step.
 

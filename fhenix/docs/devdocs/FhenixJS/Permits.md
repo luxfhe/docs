@@ -18,7 +18,7 @@ Permits are meant to be used together with the interfaces exposed by [`Permissio
 parameter, that's a good sign that we should use a `permit` to manage and create user permissions.
 
 
-Out-of-the-box, Fhenix Solidity libraries come with a basic access control scheme. This helps contracts perform a basic check for ownership of an account.
+Out-of-the-box, luxfhe Solidity libraries come with a basic access control scheme. This helps contracts perform a basic check for ownership of an account.
 
 To confirm whether the recipient is authorized, EIP712 signatures are employed. EIP712 is a standard for Ethereum signed messages that makes it easier to understand the information being signed. This allows us to verify that the signer of a given piece of data is the owner of the account they claim to be.
 
@@ -67,15 +67,15 @@ modifier onlySender(Permission memory permission) {
 
 The `onlySender` modifier takes a `Permission`. It then calculates the `digest` from the `publicKey`. The signer's address is recovered from the `digest` using the `ECDSA.recover` function. If the recovered address matches `msg.sender`, it means that the caller is indeed the owner of the account and is allowed to access the data.
 
-You can use this helpful contract out-of-the-box by importing it from `@fhenixprotocol/contracts/access` and can be easily imported to integrate into your contracts.
+You can use this helpful contract out-of-the-box by importing it from `@luxfheprotocol/contracts/access` and can be easily imported to integrate into your contracts.
 
 ```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@fhenixprotocol/contracts/Fhe.sol";
-import { Permissioned } from "@fhenixprotocol/contracts/access/Permissioned.sol";
+import "@luxfheprotocol/contracts/Fhe.sol";
+import { Permissioned } from "@luxfheprotocol/contracts/access/Permissioned.sol";
 
 contract WrappingERC20 is Permissioned, ERC20 {
     
@@ -89,7 +89,7 @@ contract WrappingERC20 is Permissioned, ERC20 {
 }
 ```
 
-For a full example what this looks like - see [EncryptedERC20.sol](https://github.com/FhenixProtocol/contracts-playground/blob/main/contracts/FHERC20.sol) or our [getting started tutorial](../Tutorials/Basic/intro.md) for a full example, including client-side integration.
+For a full example what this looks like - see [EncryptedERC20.sol](https://github.com/luxfheProtocol/contracts-playground/blob/main/contracts/FHERC20.sol) or our [getting started tutorial](../Tutorials/Basic/intro.md) for a full example, including client-side integration.
 
 #### Advanced Access Control
 

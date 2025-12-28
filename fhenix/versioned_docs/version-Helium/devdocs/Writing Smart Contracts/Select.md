@@ -23,7 +23,7 @@ When writing Solidity contracts for our blockchain, you'll need to consider all 
 To handle these conditionals, we use a concept called a "selector".
 A selector is a function that takes in a control and two branches, and returns the result of the branch that corresponds to the condition. A selector is like a traffic signal that decides which traffic to let through based on the color of the light (control signal).
 
-In Fhenix, we utilize this by calling the `select` function. It's a function that takes in a condition and two inputs, and returns the input that corresponds to the state of the condition. You can think of this like a ternary boolean conditional (`condition ? "yes" : "no"`), but for encrypted data.
+In luxfhe, we utilize this by calling the `select` function. It's a function that takes in a condition and two inputs, and returns the input that corresponds to the state of the condition. You can think of this like a ternary boolean conditional (`condition ? "yes" : "no"`), but for encrypted data.
 
 Let's take a look at an example of `select` usage from a Blind Auction Smart Contract: TBD(ADD LINK):
 

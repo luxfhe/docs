@@ -1,11 +1,11 @@
-# 🎧 Fhenix Remix Plugin
+# 🎧 luxfhe Remix Plugin
 
-Fhenix created a plugin to ease the interaction with the contracts.
+luxfhe created a plugin to ease the interaction with the contracts.
 
 #### Adding the Plugin
 
 In order to add the plugin you can simply click on the `Plugin Manager` button in remix (left bottom side), then click on the `Connect to a Local Plugin` link.
-Set the `Plugin Name` value to be `Fhenix` and the `URL` value to be `https://remix.nitrogen.fhenix.zone`
+Set the `Plugin Name` value to be `luxfhe` and the `URL` value to be `https://remix.nitrogen.luxfhe.zone`
 
 ![](/img/install-plugin.webp)
 
@@ -32,6 +32,6 @@ After the message is signed, the contract will be saved to the list.
 
 ![](/img/tools-info.webp)
 
-1. Switch to the Fhenix network or add it to MetaMask if it is not already present.
+1. Switch to the luxfhe network or add it to MetaMask if it is not already present.
 2. Select the desired encryption type.
 3. Select the contract to display permit information.

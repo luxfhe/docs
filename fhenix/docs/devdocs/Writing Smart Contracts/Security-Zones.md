@@ -9,9 +9,9 @@ In various use cases, scenarios, and applications, different levels of security,
 
 ## What are Security Zones
 
-Fhenix developed Security Zones to address this problem. With Fhenix, multiple encryption key sets (i.e., Security Zones) can coexist on a single network. Previously, we were limited to optimizing a single cryptographic key set to meet average security and performance needs. Now, with multiple Security Zones, Fhenix can tailor encryption configurations to specific use cases, eliminating the need to compromise on security, performance, or trust.
+luxfhe developed Security Zones to address this problem. With luxfhe, multiple encryption key sets (i.e., Security Zones) can coexist on a single network. Previously, we were limited to optimizing a single cryptographic key set to meet average security and performance needs. Now, with multiple Security Zones, luxfhe can tailor encryption configurations to specific use cases, eliminating the need to compromise on security, performance, or trust.
 
-For example, highly sensitive information can be protected with maximum security guarantees by using a Threshold Network for encryption. For less sensitive data, a local key set controlled by the sequencer may suffice, offering better performance with slightly lower but acceptable trust assumptions. Similarly, some applications may prefer an encryption scheme that specializes in small ciphertext sizes but slower computation, while apps may need to optimize for transaction price above everything else. Security zones will allow having different schemes with different configurations, all under one roof (or rather, one network - Fhenix).
+For example, highly sensitive information can be protected with maximum security guarantees by using a Threshold Network for encryption. For less sensitive data, a local key set controlled by the sequencer may suffice, offering better performance with slightly lower but acceptable trust assumptions. Similarly, some applications may prefer an encryption scheme that specializes in small ciphertext sizes but slower computation, while apps may need to optimize for transaction price above everything else. Security zones will allow having different schemes with different configurations, all under one roof (or rather, one network - luxfhe).
 
 :::warning[Important Dev Hint]
 An important nuance of Security Zones is that two ciphertexts that are encrypted using two different security zones are not compatible, since every Zone represents a different set of **FHE keys**. For example, we cannot compute enc(a) + enc(b), where a and b were encrypted using different Zones.
@@ -25,13 +25,13 @@ Currently, creating new Security Zones is not dynamically supported, which means
 In Nitrogen, we introduce two Security Zones to demonstrate the concept:
 
 ### Threshold Network (zone 0 - default)
-This zone uses a Threshold Network. The benefit of this approach is that it provides the end user with additional protection from malicious actors. For further reading on the Threshold network, [see here](../Fhenix%20Testnet/Threshold-Network.md).
+This zone uses a Threshold Network. The benefit of this approach is that it provides the end user with additional protection from malicious actors. For further reading on the Threshold network, [see here](../luxfhe%20Testnet/Threshold-Network.md).
 
 ### Local (zone 1)
-This zone uses a local key set held by the sequencer (this is how previous Fhenix testnets handled the decryption key). The intention of this zone is to offer faster decryption but require more trust from the user with the tradeoff of assuming a trusted sequencer.
+This zone uses a local key set held by the sequencer (this is how previous luxfhe testnets handled the decryption key). The intention of this zone is to offer faster decryption but require more trust from the user with the tradeoff of assuming a trusted sequencer.
 
 :::info[Dev Hint]
-Whether you are porting a contract from a previous Fhenix version, or creating a new one - you don't have to do anything in particular to use the Threshold Network. Security Zone 0 is the default one - meaning that you don't need to modify your code to use it! See the code example below 👇
+Whether you are porting a contract from a previous luxfhe version, or creating a new one - you don't have to do anything in particular to use the Threshold Network. Security Zone 0 is the default one - meaning that you don't need to modify your code to use it! See the code example below 👇
 :::
 
 ## Code Example
@@ -53,7 +53,7 @@ function addSecZone1(n1 inEuint32, n2 inEuint32) {
 ```
 
 ```js title="index.js"
-const client = new FhenixClient({ provider });
+const client = new luxfheClient({ provider });
 
 let first = await client.encrypt_uint32(5); // This implicitly uses Security Zone 0
 let second = await client.encrypt_uint32(1332, 0); // This implicitly uses Security Zone 0
@@ -68,7 +68,7 @@ await contract.addSecZone1(first, second);
 
 In **Solidity**, you will notice that you can specify a Security Zone only when calling functions that are creating `eunitX` types, meaning in `FHE.asEuintX()` functions. This is because the `euintX` types include metadata about the Security Zone that the ciphertext was encrypted with.
 
-In **fhenix.js**, you can specify a Security Zone only in the `encrypt()` functions because you need to encrypt the data with the desired Security Zone's public key.
+In **luxfhe.js**, you can specify a Security Zone only in the `encrypt()` functions because you need to encrypt the data with the desired Security Zone's public key.
 
 :::info[Note]
 The current security zones are implemented to demonstrate the concept with tradeoffs between security and performance. However, they are not indicative of a production deployment.

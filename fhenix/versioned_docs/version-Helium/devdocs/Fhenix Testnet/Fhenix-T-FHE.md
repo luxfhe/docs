@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# ✨ Fhenix & FHE
+# ✨ luxfhe & FHE
 
-Fhenix is revolutionizing the blockchain space by utilizing Fully Homomorphic Encryption (FHE) for confidential smart contracts on public blockchains. An urgent blockchain challenge is ensuring privacy, and FHE is a promising solution. By leveraging FHE's ability to process encrypted data, privacy concerns are effectively addressed, thereby creating a safer environment for Web3 applications.
+luxfhe is revolutionizing the blockchain space by utilizing Fully Homomorphic Encryption (FHE) for confidential smart contracts on public blockchains. An urgent blockchain challenge is ensuring privacy, and FHE is a promising solution. By leveraging FHE's ability to process encrypted data, privacy concerns are effectively addressed, thereby creating a safer environment for Web3 applications.
 
 ## FHE - Fully Homomorphic Encryption
 
@@ -16,9 +16,9 @@ FHE makes it possible to write private smart contracts that keep on-chain data e
 
 To read more about different FHE schemes, see our [FHE Overview Section](./FHE-Overview).
 
-## Fhenix Helium Testnet
+## luxfhe Helium Testnet
 
-The current Fhenix Helium Testnet is the first public iteration of the Fhenix protocol. It is still an early build, and it has bugs (unfortunately) and many features that are still under development.
+The current luxfhe Helium Testnet is the first public iteration of the luxfhe protocol. It is still an early build, and it has bugs (unfortunately) and many features that are still under development.
 
 There are many challenges ahead and many problems to solve. However, we are excited to be working on this project, because it is potentially an innovative and disruptive technology in the blockchain space.
 

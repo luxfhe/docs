@@ -4,9 +4,9 @@ title: 🪵 Console.log
 description: How to debug your contracts using Console.log
 ---
 
-### Console.log in Fhenix's Localfhenix Environment
+### Console.log in luxfhe's Localluxfhe Environment
 
-In Fhenix's Localfhenix environment, the `Console.log` function and its variants serve as essential debugging tools for Solidity developers. These logs are directed to the Docker log output, aiding in monitoring and troubleshooting smart contract execution in real-time.
+In luxfhe's Localluxfhe environment, the `Console.log` function and its variants serve as essential debugging tools for Solidity developers. These logs are directed to the Docker log output, aiding in monitoring and troubleshooting smart contract execution in real-time.
 
 #### Public Functions
 
@@ -22,7 +22,7 @@ Here is how you can use these logging functions in your smart contracts:
 **Logging an Integer:**
 
 ```solidity
-import { Console } from "@fhenixprotocol/contracts/utils/debug/Console.sol";
+import { Console } from "@luxfheprotocol/contracts/utils/debug/Console.sol";
 
 contract ExampleContract {
     function logIntExample() public pure {
@@ -34,12 +34,12 @@ contract ExampleContract {
 **Logging a Byte Array:**
 
 ```solidity
-import { Console } from "@fhenixprotocol/contracts/utils/debug/Console.sol";
+import { Console } from "@luxfheprotocol/contracts/utils/debug/Console.sol";
 
 contract ExampleContract {
     function logBytesExample() public pure {
-        bytes memory data = "Hello, Fhenix!";
-        Console.logBytes(data);  // Contract Log: Hello, Fhenix!
+        bytes memory data = "Hello, luxfhe!";
+        Console.logBytes(data);  // Contract Log: Hello, luxfhe!
     }
 }
 ```
@@ -57,8 +57,8 @@ When working with encrypted numbers in smart contracts, having robust logging me
 Here's an example demonstrating how logging might be used in the context of encrypted number operations:
 
 ```solidity
-import "@fhenixprotocol/contracts/utils/debug/Console.sol";
-import { FHE } from "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/utils/debug/Console.sol";
+import { FHE } from "@luxfheprotocol/contracts/FHE.sol";
 
 contract EncryptedNumberContract {
     using EncryptedNumberLibrary for EncryptedNumber;
@@ -83,21 +83,21 @@ contract EncryptedNumberContract {
 
 By strategically placing logs, developers can gain insights into the operations and transformations performed on encrypted numbers, greatly simplifying debugging and ensuring the integrity of computations.
 
-### Viewing Logs in the Localfhenix Docker Container
+### Viewing Logs in the Localluxfhe Docker Container
 
-Logging in the Localfhenix environment is directed to the Docker log output. To view these logs, follow these steps:
+Logging in the Localluxfhe environment is directed to the Docker log output. To view these logs, follow these steps:
 
 :::note
-Logging is not available on the Fhenix Testnet or Mainnet. It is only available in the Localfhenix development environment.
+Logging is not available on the luxfhe Testnet or Mainnet. It is only available in the Localluxfhe development environment.
 :::
 
-If you are running Localfhenix using the Hardhat plugin, you can view the logs by running the following command:
+If you are running Localluxfhe using the Hardhat plugin, you can view the logs by running the following command:
 
 ```sh
-docker logs localfhenix_hh_plugin -f 2>&1 | grep "Contract Log:"
+docker logs localluxfhe_hh_plugin -f 2>&1 | grep "Contract Log:"
 ```
 
-If you are running LocalFhenix using the Docker image directly, you must first identify the container name using the `docker ps` command and then view the logs:
+If you are running Localluxfhe using the Docker image directly, you must first identify the container name using the `docker ps` command and then view the logs:
 
 ```sh
 docker logs <container_name> -f 2>&1 | grep "Contract Log:"

@@ -1,7 +1,7 @@
 ---
 title: Local Development Setup
 sidebar_position: 2
-description: Setting up your local development environment for Fhenix development
+description: Setting up your local development environment for luxfhe development
 ---
 
 # Quick Start
@@ -9,7 +9,7 @@ description: Setting up your local development environment for Fhenix developmen
 
 This guide explains how to set up your local development environment for building FHE (Fully Homomorphic Encryption) smart contracts with CoFHE. This starter kit provides everything you need to develop, test, and deploy FHE contracts both locally and on test networks.
 
-The Fhenix development environment consists of several key components:
+The luxfhe development environment consists of several key components:
 
 - **cofhe-hardhat-starter**: Template hardhat project intended to be cloned and used as a starting point.
 - **[cofhe-hardhat-plugin](#1-cofhe-hardhat-plugin)**: Hardhat plugin that deploys the `cofhe-mock-contracts` and exposes utilities.
@@ -27,10 +27,10 @@ Before starting, ensure you have:
 
 ## Installation
 
-1. Clone the `cofhe-hardhat-starter` [repo](https://github.com/fhenixprotocol/cofhe-hardhat-starter):
+1. Clone the `cofhe-hardhat-starter` [repo](https://github.com/luxfhe/cofhe-hardhat-starter):
 
 ```bash
-git clone https://github.com/fhenixprotocol/cofhe-hardhat-starter.git
+git clone https://github.com/luxfhe/cofhe-hardhat-starter.git
 cd cofhe-hardhat-starter
 ```
 
@@ -56,9 +56,9 @@ The starter kit provides a well-organized directory structure to help you get st
 
 FHE contracts use special encrypted types and operations from the [FHE library](../fhe-library/index.md):
 
-Example from [Counter.sol](https://github.com/FhenixProtocol/cofhe-hardhat-starter/blob/main/contracts/Counter.sol):
+Example from [Counter.sol](https://github.com/luxfheProtocol/cofhe-hardhat-starter/blob/main/contracts/Counter.sol):
 ```solidity
-import "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import "@luxfheprotocol/cofhe-contracts/FHE.sol";
 
 contract Counter {
     euint32 public count;  // Encrypted uint32
@@ -143,7 +143,7 @@ pnpm arb-sepolia:increment-counter
 
 You can create custom Hardhat tasks for your contracts in the `tasks/` directory:
 
-Task example for [increment-counter](https://github.com/FhenixProtocol/cofhe-hardhat-starter/blob/main/tasks/increment-counter.ts)
+Task example for [increment-counter](https://github.com/luxfheProtocol/cofhe-hardhat-starter/blob/main/tasks/increment-counter.ts)
 ```typescript
 task("increment-counter", "Increment the counter on the deployed contract")
   .setAction(async (_, hre: HardhatRuntimeEnvironment) => {
@@ -269,6 +269,6 @@ CoFHE supports multiple development environments:
 
 
 ### Resources
-- [Fhenix Documentation](https://docs.fhenix.zone)
-- [Cofhejs GitHub](https://github.com/FhenixProtocol/cofhejs)
-- [CoFHE Contracts GitHub](https://github.com/FhenixProtocol/cofhe-contracts)
+- [luxfhe Documentation](https://docs.luxfhe.zone)
+- [Cofhejs GitHub](https://github.com/luxfheProtocol/cofhejs)
+- [CoFHE Contracts GitHub](https://github.com/luxfheProtocol/cofhe-contracts)

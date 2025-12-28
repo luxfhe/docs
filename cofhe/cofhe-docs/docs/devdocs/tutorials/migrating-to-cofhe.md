@@ -5,7 +5,7 @@ sidebar_position: 3
 
 # Migrating Your Contract to CoFHE - It's Easy!
 
-Want to upgrade your Fhenix L2 contract to use CoFHE? Let's walk through it with a simple example - a privacy-enabled ERC20 token.
+Want to upgrade your luxfhe L2 contract to use CoFHE? Let's walk through it with a simple example - a privacy-enabled ERC20 token.
 
 ## The Key Change: Async Operations
 
@@ -17,7 +17,7 @@ The main difference is that CoFHE uses asynchronous operations under the hood. B
 
 ## Key Migration Considerations
 
-When migrating your contracts from Fhenix L2 to CoFHE, keep these important points in mind:
+When migrating your contracts from luxfhe L2 to CoFHE, keep these important points in mind:
 
 ### 1. Add allows where necessary
 
@@ -29,7 +29,7 @@ In CoFHE, you need to explicitly allow the contract to use encrypted numbers tha
 
 ### 2. Remove `FHE.req()`
 
-In Fhenix L2, you could use `FHE.req()` to enforce conditions on encrypted values, but this requires synchronus operation and also reveals some information about the encrypted value.\
+In luxfhe L2, you could use `FHE.req()` to enforce conditions on encrypted values, but this requires synchronus operation and also reveals some information about the encrypted value.\
 In CoFHE, which uses symbolic execution and operates asynchronously, this approach needs to be reimagined. There are several ways to handle this:
 
 1. **Conditional Operations**: Instead of requiring conditions, implement logic that naturally enforces constraints
@@ -77,16 +77,16 @@ For more info see [permit management](/docs/devdocs/cofhejs/permits-management) 
 
 Here's how it works:
 
-## Original Fhenix L2 Contract - updated
+## Original luxfhe L2 Contract - updated
 
-First, let's look at the original Fhenix L2 contract:
+First, let's look at the original luxfhe L2 contract:
 
 ```javascript
 pragma solidity ^0.8.20;
 
-import "@fhenixprotocol/contracts/access/Permissioned.sol";
+import "@luxfheprotocol/contracts/access/Permissioned.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/FHE.sol";
 
 contract WrappingERC20 is ERC20, Permissioned {
 
@@ -178,16 +178,16 @@ contract WrappingERC20 is ERC20, Permissioned {
 
 In the above example since allowing the users on every step of the way, the users can use decrypt/sealoutput directly from Cofhejs or using fhe.decrypt as above while listening on the event `DecryptResult`.
 
-## Frontend Fhenix.js to Cofhejs
+## Frontend luxfhe.js to Cofhejs
 
-The main difference between Fhenix.js and Cofhejs is that Cofhejs is asynchronous and uses symbolic execution.  
+The main difference between luxfhe.js and Cofhejs is that Cofhejs is asynchronous and uses symbolic execution.  
 This means that the encrypted values are not revealed until the user requests a decryption.
 
 ### 1. Initialization
 
 ```javascript
 // diff-remove
-const fhenixClient = new fhenixjs.FhenixClient({ provider: provider })
+const luxfheClient = new luxfhejs.luxfheClient({ provider: provider })
 // diff-add
 await cofhejs.initializeWithEthers({
 	// diff-add
@@ -206,7 +206,7 @@ With Cofhejs the encryption is done asynchronously, for this reason we can provi
 
 ```javascript
 // diff-remove
-const envValue = await fhenixClient.encrypt_uint128(value)
+const envValue = await luxfheClient.encrypt_uint128(value)
 // diff-add
 const logState = (state) => {
 	// diff-add
@@ -219,7 +219,7 @@ const encryptedValues = await cofhejs.encrypt([Encryptable.uint32(10n), Encrypta
 
 ### 3. Permits and Unsealing
 
-In Fhenix.js the permit system was tied to contract address.  
+In luxfhe.js the permit system was tied to contract address.  
 The application required to request a permit for each contract address.  
 In addition, to unseal the value, the contract function needs to use the permit in order to seal the value.
 
@@ -231,15 +231,15 @@ To unseal the value, the contract need to return the encrypted value handle and 
 // diff-remove
 const getExtractedPermit = async (contractAddress: string) => {
 	// diff-remove
-	if (fhenixClient != null && provider != null) {
+	if (luxfheClient != null && provider != null) {
 		// diff-remove
 		try {
 			// diff-remove
-			let permit = await fhenixjs.getPermit(contractAddress, provider)
+			let permit = await luxfhejs.getPermit(contractAddress, provider)
 			// diff-remove
-			fhenixClient.storePermit(permit)
+			luxfheClient.storePermit(permit)
 			// diff-remove
-			return fhenixClient.extractPermitPermission(permit)
+			return luxfheClient.extractPermitPermission(permit)
 			// diff-remove
 		} catch (err) {
 			// diff-remove
@@ -282,8 +282,8 @@ const unsealed = await cofhejs.unseal(encryptedValueHandle, FheTypes.Uint32, per
 
 ### 4. Decryption
 
-In Fhenix L2 the decryption was done on-chain using the `FHE.decrypt` function.  
-With Fhenix Co-Processor the decryption can be done in two ways:
+In luxfhe L2 the decryption was done on-chain using the `FHE.decrypt` function.  
+With luxfhe Co-Processor the decryption can be done in two ways:
 
 1. Using `FHE.decrypt` in your solidity contract.
 2. Off-chain using the `cofhejs.decrypt` function.

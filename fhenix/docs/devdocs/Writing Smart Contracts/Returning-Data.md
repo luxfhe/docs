@@ -6,7 +6,7 @@ description: Sealing & Decryption - how data from a contract is returned
 
 # Sealing and Decrypting
 
-When an application reads encrypted data from a Fhenix smart contract, that data must first be converted from its encrypted on-chain form to an encrypted form that the application can read and the user can decrypt.
+When an application reads encrypted data from a luxfhe smart contract, that data must first be converted from its encrypted on-chain form to an encrypted form that the application can read and the user can decrypt.
 
 There are two ways to return encrypted data to the user:
 
@@ -18,17 +18,17 @@ There are two ways to return encrypted data to the user:
 
     The encrypted data is then stored in a JSON structure, which is described in a [later section](#metamask-compatability).
 
-    This data can then be decrypted using fhenix.js, manually by using the caller's private key or using Metamask or compatible APIs.
+    This data can then be decrypted using luxfhe.js, manually by using the caller's private key or using Metamask or compatible APIs.
 
 2. **Standard Decryption**
 
-    Alternatively, Fhenix supports standard decryption as well. If some data needs to be decrypted for public access, that can be done as well and a plaintext value is returned to the caller.
+    Alternatively, luxfhe supports standard decryption as well. If some data needs to be decrypted for public access, that can be done as well and a plaintext value is returned to the caller.
     This can be done using the `FHE.decrypt` function.
 
 ## Sealed Data Format
 
 :::note
-If using `fhenixjs`, parsing the raw sealed data that is returned from sealoutput or seal is unnecessary.
+If using `luxfhejs`, parsing the raw sealed data that is returned from sealoutput or seal is unnecessary.
 :::
 
 The following JSON structure shows the components of the encrypted data returned by the `seal` function:
@@ -58,7 +58,7 @@ Metamask's `eth_getEncryptionPublicKey` and `eth_decrypt` methods are deprecated
 ### Sealed Box Encryption
 
 ```solidity
-import {FHE} from "@fhenixprotocol/contracts";
+import {FHE} from "@luxfheprotocol/contracts";
 
 function sealoutputExample(bytes32 pubkey) public pure returns (bytes memory reencrypted) {
     euint8 memory foo = asEuint8(100);
@@ -69,7 +69,7 @@ function sealoutputExample(bytes32 pubkey) public pure returns (bytes memory ree
 ### Decryption
 
 ```Javascript
-import {FHE} from "@fhenixprotocol/contracts";
+import {FHE} from "@luxfheprotocol/contracts";
 
 function sealoutputExample() public pure returns (uint8 decrypted) {
     euint8 memory foo = asEuint8(100);
@@ -82,7 +82,7 @@ function sealoutputExample() public pure returns (uint8 decrypted) {
 ```Javascript
 async getPub() {
     const provider = new BrowserProvider(window.ethereum);
-    const client = new FhenixClient({provider});
+    const client = new luxfheClient({provider});
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
     const keyResult = await provider.send('eth_getEncryptionPublicKey',[accounts[0]]);
     const pk = `0x${this.base64ToHex(keyResult)}`;
@@ -90,7 +90,7 @@ async getPub() {
 }
 async unseal() {
     const provider = new BrowserProvider(window.ethereum);
-    const client = new FhenixClient({provider});
+    const client = new luxfheClient({provider});
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
     const result = await provider.send('eth_decrypt', [this.sealedInput, accounts[0]]);
     const plaintext = this.toString(result);
@@ -98,4 +98,4 @@ async unseal() {
 }
 ```
 
-Taken from the [encryption & unsealing tool](https://encrypt.fhenix.zone/)
+Taken from the [encryption & unsealing tool](https://encrypt.luxfhe.zone/)

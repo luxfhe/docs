@@ -2,17 +2,17 @@
 
 Welcome to this workshop on building an encrypted ERC20 token!
 
-See more of our examples at https://dapps.zama.ai.
+See more of our examples at https://dapps.luxfhe.ai.
 
 ## Getting started
 
-Install Zama Devnet in MetaMask:
+Install LuxFHE Devnet in MetaMask:
 
-- Network name: Zama Devnet
-- RPC URL: https://devnet.zama.ai
+- Network name: LuxFHE Devnet
+- RPC URL: https://devnet.luxfhe.ai
 - Chain ID: 8009
 - Currency symbol: ZAMA
-- Block explorer: https://main.explorer.zama.ai/
+- Block explorer: https://main.explorer.luxfhe.ai/
 
 ## Encrypted ERC20
 
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 For now we also need to installed the fhEVM cli:
 
 ```
-git clone https://github.com/zama-ai/fhevm-tfhe-cli
+git clone https://github.com/luxfhe-ai/fhevm-tfhe-cli
 cd fhevm-tfhe-cli
 cargo install --path .
 ```

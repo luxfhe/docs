@@ -13,7 +13,7 @@ The FHERC20 contract is an implementation of a Fully Homomorphic Encryption (FHE
 
 ### Encrypted Balances
 
-The FHERC20 contract stores balances as encrypted values (`euint128`) using the Fhenix CoFHE coprocessor. These encrypted balances preserve user privacy while allowing for secure operations. The actual token balance of an address is kept confidential and can only be accessed under specific conditions:
+The FHERC20 contract stores balances as encrypted values (`euint128`) using the luxfhe CoFHE coprocessor. These encrypted balances preserve user privacy while allowing for secure operations. The actual token balance of an address is kept confidential and can only be accessed under specific conditions:
 
 1. By the owner of the balance
 2. Through sealed decryption (using a public/private key pair)

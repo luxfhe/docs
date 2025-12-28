@@ -3,8 +3,8 @@ sidebar_position: 300
 title: 🔀 Parallel Decryptions
 ---
 
-In Fully Homomorphic Encryption (FHE) schemes, decryption can be slow and computationally expensive, especially when using a [Threshold Network](../Fhenix%20Testnet/Threshold-Network.md). Additionally, since a Threshold Network functions as a sort of network in itself and serves as an oracle for the main blockchain, it cannot perform decryption synchronously, since decryptions may take too long to be practical or the Threshold Network might be busy or unavailable.
-To address this issue, Nitrogen introduces Parallel Decryptions. This feature performs asynchronous decryption while providing the experience of synchronous decryption. Instead of using callbacks, as in traditional oracle-based protocols, Fhenix allows developers to write code normally, without needing to be concerned that a decryption request is being sent to an external component.
+In Fully Homomorphic Encryption (FHE) schemes, decryption can be slow and computationally expensive, especially when using a [Threshold Network](../luxfhe%20Testnet/Threshold-Network.md). Additionally, since a Threshold Network functions as a sort of network in itself and serves as an oracle for the main blockchain, it cannot perform decryption synchronously, since decryptions may take too long to be practical or the Threshold Network might be busy or unavailable.
+To address this issue, Nitrogen introduces Parallel Decryptions. This feature performs asynchronous decryption while providing the experience of synchronous decryption. Instead of using callbacks, as in traditional oracle-based protocols, luxfhe allows developers to write code normally, without needing to be concerned that a decryption request is being sent to an external component.
 
 ### Better developer and user experience
 
@@ -17,7 +17,7 @@ This approach improves the whole experience in two key ways:
   euint32 encrypted; 
   uint32  decrypted;
 
-  function decryptInFhenix() public {
+  function decryptInluxfhe() public {
     // Beginning of function logic ..
 
     decrypted = FHE.decrypt(encrypted);
@@ -40,14 +40,14 @@ This approach improves the whole experience in two key ways:
   }
 ```
 
-As shown in the example above, Fhenix's parallel decryption approach allows for clean, straightforward code that reads like normal synchronous operations. Developers can write their business logic in a natural flow, with decryption seamlessly integrated into their functions. This makes the code more maintainable and easier to understand, while Fhenix handles all the complexity of asynchronous decryption behind the scenes.
+As shown in the example above, luxfhe's parallel decryption approach allows for clean, straightforward code that reads like normal synchronous operations. Developers can write their business logic in a natural flow, with decryption seamlessly integrated into their functions. This makes the code more maintainable and easier to understand, while luxfhe handles all the complexity of asynchronous decryption behind the scenes.
 
 ### In depth
 
 Behind the scenes, decryption requests are detected in transactions and sent to the appropriate decrypting party (whether Threshold Network or local decryptor). While these decryption requests are processed, the transactions are pushed to a special queue (a sort of tx-mempool). After all the decryption requests for a transaction are completed, the transaction is included in a block and executed.
 
 :::note
-Since Fhenix is an L2 solution with a sequencer, no traditional mempool is in place. As a result, there may be a slight delay before the transaction is included and executed in a block, potentially leading to a timeout of the original transaction (tx) receipt. To handle this, periodically query the tx hash in your UI.
+Since luxfhe is an L2 solution with a sequencer, no traditional mempool is in place. As a result, there may be a slight delay before the transaction is included and executed in a block, potentially leading to a timeout of the original transaction (tx) receipt. To handle this, periodically query the tx hash in your UI.
 :::
 
 ```javascript
@@ -97,7 +97,7 @@ const contract = new ethers.Contract(address, abi, signer);
 try {
   const receipt = await handleDecryptTransaction(
     contract,
-    'decryptInFhenix'
+    'decryptInluxfhe'
   );
   console.log('Transaction completed:', receipt);
 } catch (error) {

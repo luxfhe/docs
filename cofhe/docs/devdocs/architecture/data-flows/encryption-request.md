@@ -15,7 +15,7 @@ This document outlines the complete flow of the encryption request process using
 | Component | Description |
 |-----------|-------------|
 | **dApp** | The decentralized application that interacts with the user and the contracts |
-| **Cofhejs** | TypeScript package designed for seamless interaction Fhenix's co-processor |
+| **Cofhejs** | TypeScript package designed for seamless interaction luxfhe's co-processor |
 | **Threshold Network** | (When applicable) Handles secure decryption operations |
 
 ---

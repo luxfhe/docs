@@ -34,7 +34,7 @@ graph LR
 - Encryption Request Flow
 - Request for FHE Operation
 - Decryption Request
-- Decrypt/SealOutput from FhenixJS
+- Decrypt/SealOutput from luxfheJS
 
 ## 🔧 Cofhejs
 > Including GitHub Repository Links

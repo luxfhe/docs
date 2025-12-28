@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## Overview
 
-In Fhenix's FHE system, data returned from smart contracts is "sealed" (internally re-encrypted since it already exists in an encrypted state) to maintain confidentiality during transmission. The unsealing process converts this encrypted data back into readable values using your permit's sealing key pair.
+In luxfhe's FHE system, data returned from smart contracts is "sealed" (internally re-encrypted since it already exists in an encrypted state) to maintain confidentiality during transmission. The unsealing process converts this encrypted data back into readable values using your permit's sealing key pair.
 
 > Note: To learn more about sealed box encryption, take a look at the [libsodium sealedbox docs](https://libsodium.gitbook.io/doc/public-key_cryptography/sealed_boxes#purpose).
 

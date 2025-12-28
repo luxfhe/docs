@@ -1,7 +1,7 @@
-# 🔐 Fhenix Encryption UI
+# 🔐 luxfhe Encryption UI
 
-Fhenix encryption UI can be found in the following [link](https://encrypt.fhenix.zone/)
-This UI is useful for those who are not using remix or using remix without using the [plugin](Fhenix-Remix-Plugin.md)
+luxfhe encryption UI can be found in the following [link](https://encrypt.luxfhe.zone/)
+This UI is useful for those who are not using remix or using remix without using the [plugin](luxfhe-Remix-Plugin.md)
 
 ![](/img/encui.png)
 
@@ -25,4 +25,4 @@ Decryption can be done by simply pasting the encrypted value instead of the "Ent
 #### Permit Generation
 
 This tool can also be used to generate a permit for a contract. Enter a contract address, and click generate permit.
-The permit will be generated and copied to your clipboard. You can save the permit to fhenix.js, or use the signature field to interact with contracts using the [Permission structure](../Writing%20Smart%20Contracts/Permissions.md).
+The permit will be generated and copied to your clipboard. You can save the permit to luxfhe.js, or use the signature field to interact with contracts using the [Permission structure](../Writing%20Smart%20Contracts/Permissions.md).

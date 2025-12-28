@@ -40,7 +40,7 @@ The rule of thumb that we are suggesting is to use `FHE.req` only in `view` func
 
 ## FHE.decrypt()
 
-Generally speaking, the idea of Fhenix and having FHE in place is the ability to have your values encrypted throughout the whole lifetime of the data (since you can operate on encrypted data). When using `FHE.decrypt` you should always consider the following:
+Generally speaking, the idea of luxfhe and having FHE in place is the ability to have your values encrypted throughout the whole lifetime of the data (since you can operate on encrypted data). When using `FHE.decrypt` you should always consider the following:
 a. On mainnet (and future testnet versions) the decryption process will be done on a threshold network and the operation might not be fully deterministic (network issues for example)
 b. Assuming malicious node runner have DMA (direct memory access) or any other way to read the process' memory he can see what is the decrypted value while it is being executed and use MEV techniques.
 
@@ -59,7 +59,7 @@ For more detailed benchmarks please refer to: [Gas and Benchmarks](./Gas-and-Ben
 
 ## Randomness
 
-Confidentiality is a crucial step in order to achieve on-chain randomness. Fhenix, as a chain that implements confidentiality, is a great space to implement and use on-chain random numbers and this is part of our roadmap.
+Confidentiality is a crucial step in order to achieve on-chain randomness. luxfhe, as a chain that implements confidentiality, is a great space to implement and use on-chain random numbers and this is part of our roadmap.
 We know that there are some #BUIDLers that are planning to implement dapps that leverage both confidentiality and random numbers so until we will have on-chain true random, we are suggesting to use the following implementation as a MOCKUP.
 
 :::danger

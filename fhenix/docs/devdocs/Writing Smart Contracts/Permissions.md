@@ -35,7 +35,7 @@ Imagine a contract holding medical records. You want to create a secure method f
 ```javascript
 pragma solidity ^0.8.20;
 
-import "@fhenixprotocol/contracts/access/Permissioned.sol";
+import "@luxfheprotocol/contracts/access/Permissioned.sol";
 
 contract MedicalRecords is Permissioned {
     
@@ -57,7 +57,7 @@ In this example we are just showcasing the usage of permissions. `string` and `a
 
 ```javascript
 pragma solidity ^0.8.20;
-import {FHE, euint8, inEuint8} from "@fhenixprotocol/contracts/FHE.sol";
+import {FHE, euint8, inEuint8} from "@luxfheprotocol/contracts/FHE.sol";
 contract Test {
     euint8 _output;
 

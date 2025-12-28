@@ -11,7 +11,7 @@ Let's take a look at a simple contract that uses FHE to encrypt a counter, and b
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
-import {FHE, euint64, InEuint64} from "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import {FHE, euint64, InEuint64} from "@luxfheprotocol/cofhe-contracts/FHE.sol";
 
 contract SimpleCounter {
     address owner;
@@ -75,7 +75,7 @@ In this example, we're importing the types `euint64` and `InEuint64` from the [F
 
 
 ```solidity
-import {FHE, euint64, InEuint64} from "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import {FHE, euint64, InEuint64} from "@luxfheprotocol/cofhe-contracts/FHE.sol";
 ```
 We want to keep the counter encrypted at all times, so we'll use the `euint64` type.
 

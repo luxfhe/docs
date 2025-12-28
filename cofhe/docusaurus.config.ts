@@ -10,7 +10,7 @@ const prNumber = process.env.GITHUB_EVENT_NAME === 'pull_request' ? process.env.
 const baseUrl = '/';
 
 const config: Config = {
-  title: 'Fhenix',
+  title: 'LuxFHE',
   tagline: 'Unlock Onchain Confidentiality on Ethereum',
   favicon: 'img/Favicon_Dark.svg',
   
@@ -28,14 +28,14 @@ const config: Config = {
   ],
 
   // Set the production url of your site here
-  url: 'https://fhenixprotocol.github.io',
+  url: 'https://luxfheprotocol.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: baseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'fhenixprotocol', // Usually your GitHub org/user name.
+  organizationName: 'luxfheprotocol', // Usually your GitHub org/user name.
   projectName: 'cofhe-docs', // Usually your repo name.
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
@@ -78,7 +78,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/fhenixprotocol/cofhe-docs/tree/master/',
+            'https://github.com/luxfhe/cofhe-docs/tree/master/',
           routeBasePath: 'docs',
         },
         theme: {
@@ -104,7 +104,7 @@ const config: Config = {
   ],
   themeConfig: {
     metadata: [
-      {name: 'keywords', content: 'Fhenix, Blockchain, FHE, Cofhe, Threshold Network, Fully Homomorphic Encryption, Layer 2, L2, Coprocessor, Blockchain Technology, Secure Computing, Scalable Blockchain, Decentralized'},
+      {name: 'keywords', content: 'LuxFHE, Blockchain, FHE, Cofhe, Threshold Network, Fully Homomorphic Encryption, Layer 2, L2, Coprocessor, Blockchain Technology, Secure Computing, Scalable Blockchain, Decentralized'},
       {name: 'author', content: 'FHE Labs'},
       {name: 'twitter:card', content: 'summary_large_image'}
     ],
@@ -116,9 +116,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Fhenix Docs',
+      title: 'LuxFHE Docs',
       logo: {
-        alt: 'Fhenix',
+        alt: 'LuxFHE',
         src: 'img/assets/dark-text-logo.svg',
         srcDark: 'img/assets/white-text-logo.svg',
         className: 'navbar__logo',
@@ -140,7 +140,7 @@ const config: Config = {
           to: '/docs/indexes/tutorials',
         },
         {
-          href: 'https://github.com/fhenixprotocol/',
+          href: 'https://github.com/luxfhe/',
           className: 'header-github-link',
           position: 'right',
         },
@@ -150,7 +150,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://twitter.com/FhenixIO',
+          href: 'https://twitter.com/LuxFHEIO',
           className: 'header-twitter-link',
           position: 'right',
         },
@@ -183,7 +183,7 @@ const config: Config = {
           items: [
             {
               label: 'Medium',
-              href: 'https://medium.com/@Fhenix',
+              href: 'https://medium.com/@LuxFHE',
               className: 'footer-link-item',
             },
             {
@@ -193,7 +193,7 @@ const config: Config = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/FhenixIO',
+              href: 'https://twitter.com/LuxFHEIO',
               className: 'footer-link-item',
             },
           ],
@@ -202,13 +202,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Fhenix',
-              href: 'https://fhenix.io',
+              label: 'LuxFHE',
+              href: 'https://luxfhe.io',
               className: 'footer-link-item',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/fhenixprotocol',
+              href: 'https://github.com/luxfhe',
               className: 'footer-link-item',
             },
           ],
@@ -223,7 +223,7 @@ const config: Config = {
       // Public API key: it is safe to commit it
       apiKey: '7053edb0c71f9da5171b05b1836adf78',
 
-      indexName: 'fhenix',
+      indexName: 'luxfhe',
 
       // Optional: see doc section below
       contextualSearch: false,

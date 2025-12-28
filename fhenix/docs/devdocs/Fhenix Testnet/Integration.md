@@ -3,21 +3,21 @@ sidebar_position: 3
 title: 🤲 3rd party Integrations
 ---
 
-Are you a developer looking to integrate Fhenix into your project, or support Fhenix with your app? This section is for you!
+Are you a developer looking to integrate luxfhe into your project, or support luxfhe with your app? This section is for you!
 
 ## Things to Know
 
 ### APIs, RPCs and general compatibility
 
-Fhenix is based on Arbitrum, with the Nitrogen Testnet based on Arbitrum Nitro version 3.2.1 (ArbOS 32). This means that everything that is natively supported 
-by Arbitrum Nitro is also supported by Fhenix (rpc calls, ABI, etc).
+luxfhe is based on Arbitrum, with the Nitrogen Testnet based on Arbitrum Nitro version 3.2.1 (ArbOS 32). This means that everything that is natively supported 
+by Arbitrum Nitro is also supported by luxfhe (rpc calls, ABI, etc).
 
 Please refer to the [Arbitrum documentation](https://docs.arbitrum.io/build-decentralized-apps/arbitrum-vs-ethereum/comparison-overview) for more information and specifics.
 
 ### EVM Compatibility
 
-Fhenix is fully EVM compatible, up to and including the Cancun Upgrade.
-This means that any contract that runs on Ethereum should run on Fhenix as well. We support Solidity compiler 0.8.26.
+luxfhe is fully EVM compatible, up to and including the Cancun Upgrade.
+This means that any contract that runs on Ethereum should run on luxfhe as well. We support Solidity compiler 0.8.26.
 
 ### Public Endpoints
 
@@ -33,7 +33,7 @@ We have public endpoints available for the Nitrogen Testnet, which can be used:
    <tbody>
       <tr>
          <td>JSON-RPC</td>
-         <td><a href="https://api.nitrogen.fhenix.zone"><strong>https://api.nitrogen.fhenix.zone</strong></a></td>
+         <td><a href="https://api.nitrogen.luxfhe.zone"><strong>https://api.nitrogen.luxfhe.zone</strong></a></td>
       </tr>
       <tr>
          <td>Chain ID</td>
@@ -41,16 +41,16 @@ We have public endpoints available for the Nitrogen Testnet, which can be used:
       </tr>
       <tr>
          <td>Websocket</td>
-         <td>wss://api.nitrogen.fhenix.zone:8548</td>
+         <td>wss://api.nitrogen.luxfhe.zone:8548</td>
       </tr>
    </tbody>
 </table>
 
-If you require specialized endpoints, or higher rate limits than the default please reach out to us on [Discord](https://discord.gg/FuVgxrvJMY) or [email](mailto://info@fhenix.io).
+If you require specialized endpoints, or higher rate limits than the default please reach out to us on [Discord](https://discord.gg/FuVgxrvJMY) or [email](mailto://info@luxfhe.io).
 
 ## Cross Chain Messaging Contracts
 
-The following contracts are deployed on Ethereum Sepolia and may be used by developers that wish to interact with Fhenix in a similar way to Arbitrum
+The following contracts are deployed on Ethereum Sepolia and may be used by developers that wish to interact with luxfhe in a similar way to Arbitrum
 
 <table>
     <tr>

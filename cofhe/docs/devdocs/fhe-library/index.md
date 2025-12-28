@@ -74,10 +74,10 @@ The library interacts with a `TaskManager` contract that coordinates:
 
 The complete CoFHE-Contracts repository is available at:
 
-- 📁 [GitHub Repository](https://github.com/FhenixProtocol/cofhe-contracts)
+- 📁 [GitHub Repository](https://github.com/luxfheProtocol/cofhe-contracts)
 - 📄 Core Files:
-  - [FHE.sol](https://github.com/FhenixProtocol/cofhe-contracts/blob/master/contracts/FHE.sol) - Main library implementation
-  - [ICofhe.sol](https://github.com/FhenixProtocol/cofhe-contracts/blob/master/contracts/ICofhe.sol) - Interface definitions and data structures
+  - [FHE.sol](https://github.com/luxfheProtocol/cofhe-contracts/blob/master/contracts/FHE.sol) - Main library implementation
+  - [ICofhe.sol](https://github.com/luxfheProtocol/cofhe-contracts/blob/master/contracts/ICofhe.sol) - Interface definitions and data structures
 
 ## Additional Resources
 

@@ -14,7 +14,7 @@ sidebar_position: 2
 ## Usage
 
 ```solidity
-import {FHE} from "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import {FHE} from "@luxfheprotocol/cofhe-contracts/FHE.sol";
 ```
 
 For a complete reference of all available functions and their usage, check out the [FHE.sol API documentation](../../solidity-api/FHE.md).

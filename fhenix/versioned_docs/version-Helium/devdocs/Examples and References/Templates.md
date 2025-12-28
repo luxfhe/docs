@@ -7,12 +7,12 @@ We compiled a list of a few templates that you can use as a reference to build y
 
 ### Hardhat + React
 
-https://github.com/FhenixProtocol/fhenix-hardhat-example
+https://github.com/luxfheProtocol/luxfhe-hardhat-example
 
 Has a basic contract, some tasks and a simple frontend (TODO: copy over from playground).
 
-### Nuxt 3 + Fhenixjs + Ethers.js + Bootstrap Starter
+### Nuxt 3 + luxfhejs + Ethers.js + Bootstrap Starter
 
-With this template you can easily start developing your Fhenix front-end app using Nuxt 3 (vue3).
+With this template you can easily start developing your luxfhe front-end app using Nuxt 3 (vue3).
 
-https://github.com/FhenixProtocol/fhenix-nuxt3-template
+https://github.com/luxfheProtocol/luxfhe-nuxt3-template

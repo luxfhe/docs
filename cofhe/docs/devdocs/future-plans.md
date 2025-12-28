@@ -13,7 +13,7 @@ Outlined here is a non-exhaustive list of trust-points, centralized components a
 
 | Component              | Compromise                                                   | Plan to solve                                                                    | Timeline | Status |
 | ---------------------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------- | -------- | ------ |
-| Threshold Network (TN) | All parties are run by Fhenix                                | N/A                                                                              | N/A      | ❌     |
+| Threshold Network (TN) | All parties are run by luxfhe                                | N/A                                                                              | N/A      | ❌     |
 | Threshold Network (TN) | Use of a Trusted Dealer for keys and random data generation  | N/A                                                                              | N/A      | ❌     |
 | Threshold Network (TN) | Parties trust the Coordinator                                | N/A                                                                              | N/A      | ❌     |
 | Threshold Network (TN) | TN trusts CoFHE (tx-flow decryptions)                        | N/A                                                                              | N/A      | ❌     |

@@ -9,7 +9,7 @@ import TabItem from "@theme/TabItem";
 
 ## Overview
 
-Cofhejs is a TypeScript package designed to enable seamless interaction between clients and the Fhenix's co-processor (CoFHE). It is an essential component for engineers working with FHE-enabled smart contracts, as it facilitates the encryption and decryption processes required for secure data handling in decentralized applications (dApps). Cofhejs ensures that data remains private throughout its journey from input to output in the blockchain ecosystem.
+Cofhejs is a TypeScript package designed to enable seamless interaction between clients and the luxfhe's co-processor (CoFHE). It is an essential component for engineers working with FHE-enabled smart contracts, as it facilitates the encryption and decryption processes required for secure data handling in decentralized applications (dApps). Cofhejs ensures that data remains private throughout its journey from input to output in the blockchain ecosystem.
 FHE-enabled contracts require three primary modifications to the client/frontend:
 
 - Encrypting Input Data: Before passing data to the smart contract, input must be encrypted to ensure its confidentiality. To read more about encrypted inputs, go [here](/docs/devdocs/cofhejs/encryption-operations).
@@ -20,17 +20,17 @@ Cofhejs allows encryption to begin and end privately in a dApp, while FHE-enable
 
 ## Mental Model
 
-To understand how **cofhejs** fits into the Fhenix framework, we will create a simple mental model to show how data moves through Fhenix-powered dApps.
+To understand how **cofhejs** fits into the luxfhe framework, we will create a simple mental model to show how data moves through luxfhe-powered dApps.
 
 Consider a smart contract called "**Counter**". Each user has an individual counter, and users increment and read their own counters with complete privacy. In this example, a **public key** is like a lock, and a **private key** is the corresponding key to unlock it.
 
 ### Adding to the User's Counter
 
-When users want to add a value to their counter, say "5," they first place this value inside a sort-of "box". Using cofhejs, this box is secured by locking it with Fhenix Co-Processor's **public key** (encryption). The locked box is then sent to the smart contract. Thanks to Fully Homomorphic Encryption (FHE), Fhenix can perform mathematical operations directly on these sealed boxes—without accessing the raw data inside. So, the user's encrypted value, "5," can be added to the user's encrypted counter while remaining private.
+When users want to add a value to their counter, say "5," they first place this value inside a sort-of "box". Using cofhejs, this box is secured by locking it with luxfhe Co-Processor's **public key** (encryption). The locked box is then sent to the smart contract. Thanks to Fully Homomorphic Encryption (FHE), luxfhe can perform mathematical operations directly on these sealed boxes—without accessing the raw data inside. So, the user's encrypted value, "5," can be added to the user's encrypted counter while remaining private.
 
 ### Retrieving the User's Counter
 
-To retrieve the counter value, the user needs to read the data inside the box without breaking the encryption. Here's the clever part: the user sends a second "lock" (their own public key) along with the request to read its data. This second lock is applied to the box while Fhenix removes its own lock (the Co-Processor's public key), leaving the box secured by only the user's public key. The box remains locked and the data remains private, but now only the user can open it using its private key.
+To retrieve the counter value, the user needs to read the data inside the box without breaking the encryption. Here's the clever part: the user sends a second "lock" (their own public key) along with the request to read its data. This second lock is applied to the box while luxfhe removes its own lock (the Co-Processor's public key), leaving the box secured by only the user's public key. The box remains locked and the data remains private, but now only the user can open it using its private key.
 
 ## Installation
 
@@ -109,7 +109,7 @@ await cofhejs.initializeWithEthers({
 
 ## Encrypting Input Data
 
-This step secures the data before sending it to the smart contract. Remember - all data sent to a smart contract on a blockchain is inherently public, which means that anyone can see it. However, Fhenix operates differently. To maintain user confidentiality and protect sensitive input data, Fhenix utilizes **cofhejs** to provide built-in encryption methods that must be applied before sending any data to an FHE-enabled contract (Learn more [here](/docs/devdocs/cofhejs/encryption-operations)).
+This step secures the data before sending it to the smart contract. Remember - all data sent to a smart contract on a blockchain is inherently public, which means that anyone can see it. However, luxfhe operates differently. To maintain user confidentiality and protect sensitive input data, luxfhe utilizes **cofhejs** to provide built-in encryption methods that must be applied before sending any data to an FHE-enabled contract (Learn more [here](/docs/devdocs/cofhejs/encryption-operations)).
 
 In the following example, we will encrypt multiple values and pass them to a smart contract.
 The function `logState` is a callback function that will be called with the current state of the encryption process.
@@ -131,7 +131,7 @@ const contract = new ethers.Contract(CONTRACT_ADDRESS, CONTRACT_ABI, wallet);
 const tx = await contract.add(encryptedValues.data[1]);
 ```
 
-By encrypting user data before sending it to a contract, Fhenix ensures that data remains private throughout its lifecycle in the blockchain environment.
+By encrypting user data before sending it to a contract, luxfhe ensures that data remains private throughout its lifecycle in the blockchain environment.
 
 ## Creating Permits
 
@@ -143,7 +143,7 @@ Permissions serve two main purposes:
 - **Sealing User Data**: They provide a **public key** to "seal" the encrypted data, meaning it is encrypted in such a way that only the user holding the corresponding **private key** (stored securely on the user's client) can decrypt it later.
 
 :::note[Note]
-Fhenix uses **EIP712**, a widely used Ethereum standard for signing structured data. This means: first, a user must sign a permit in their wallet to authenticate themselves and authorize the creation of the permit; second, permits are stored locally in local storage and can be reused for future interactions with the same contract. Currently, each contract that the user interacts with requires its own unique permit (subject to change).
+luxfhe uses **EIP712**, a widely used Ethereum standard for signing structured data. This means: first, a user must sign a permit in their wallet to authenticate themselves and authorize the creation of the permit; second, permits are stored locally in local storage and can be reused for future interactions with the same contract. Currently, each contract that the user interacts with requires its own unique permit (subject to change).
 :::
 
 Here's the code for this process:

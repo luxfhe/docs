@@ -8,7 +8,7 @@ import Link from '@docusaurus/Link';
 
 export function GettingStartedFrame(): JSX.Element {
   const { colorMode  } = useColorMode();
-  const iframeSrc = "https://getting-started.nitrogen.fhenix.zone" + (colorMode === 'light' ? "?isLight=1" : "");
+  const iframeSrc = "https://getting-started.nitrogen.luxfhe.zone" + (colorMode === 'light' ? "?isLight=1" : "");
 
   return (
     <section className={styles.additionalFeatures}>
@@ -32,18 +32,18 @@ export function AdditionalFeatures(): JSX.Element {
               <div className="col col--6">
                 <div className="youtube-section">
                   <div className="row">
-                    <div><a href="https://youtu.be/0s-37QpDHUY" target="_blank"><img className="youtube-video" alt="fhenix remix plugin tutorial" src="img/video-remix.jpg" style={{}}/></a></div>
+                    <div><a href="https://youtu.be/0s-37QpDHUY" target="_blank"><img className="youtube-video" alt="luxfhe remix plugin tutorial" src="img/video-remix.jpg" style={{}}/></a></div>
                     <div className="subrow">
-                      <div className="title">Fhenix Remix Plugin</div>
-                      <div className="content">Learn how to use Fhenix Plugin for Remix.</div>
+                      <div className="title">LuxFHE Remix Plugin</div>
+                      <div className="content">Learn how to use LuxFHE Plugin for Remix.</div>
                     </div>
                   </div>
                   <div className="sep"></div>
                   <div className="row">
-                    <div><a href="https://youtu.be/HhEvo3-F0h4" target="_blank"><img className="youtube-video" alt="fhenix hardhat plugin tutorial" src="img/video-hardhat.jpg" style={{}}/></a></div>
+                    <div><a href="https://youtu.be/HhEvo3-F0h4" target="_blank"><img className="youtube-video" alt="luxfhe hardhat plugin tutorial" src="img/video-hardhat.jpg" style={{}}/></a></div>
                     <div className="subrow">
-                      <div className="title">Fhenix Hardhat Plugin - Getting Started</div>
-                      <div className="content">Learn how to use Fhenix Hardhat Plugin.</div>
+                      <div className="title">LuxFHE Hardhat Plugin - Getting Started</div>
+                      <div className="content">Learn how to use LuxFHE Hardhat Plugin.</div>
                     </div>
                   </div>
                 </div>

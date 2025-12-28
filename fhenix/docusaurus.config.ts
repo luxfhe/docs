@@ -3,20 +3,20 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Fhenix',
+  title: 'LuxFHE',
   tagline: 'Unlock Onchain Confidentiality on Ethereum',
   favicon: 'img/Favicon_Dark.svg',
 
   // Set the production url of your site here
-  url: 'https://docs.fhenix.zone',
+  url: 'https://docs.luxfhe.zone',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'fhenixprotocol', // Usually your GitHub org/user name.
-  projectName: 'fhenix-docs', // Usually your repo name.
+  organizationName: 'luxfheprotocol', // Usually your GitHub org/user name.
+  projectName: 'luxfhe-docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/fhenixprotocol/fhenix-docs/tree/main/',
+            'https://github.com/luxfhe/luxfhe-docs/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -68,7 +68,7 @@ const config: Config = {
   ],
   themeConfig: {
     metadata: [
-      {name: 'keywords', content: 'Fhenix, Blockchain, FHE, Fully Homomorphic Encryption, Layer 2, L2, Coprocessor, Blockchain Technology, Secure Computing, Scalable Blockchain, Decentralized'},
+      {name: 'keywords', content: 'LuxFHE, Blockchain, FHE, Fully Homomorphic Encryption, Layer 2, L2, Coprocessor, Blockchain Technology, Secure Computing, Scalable Blockchain, Decentralized'},
       {name: 'author', content: 'FHE Labs'},
       {name: 'twitter:card', content: 'summary_large_image'}
     ],
@@ -78,12 +78,12 @@ const config: Config = {
       defaultMode: 'dark',
     },
     navbar: {
-      title: 'Fhenix',
+      title: 'LuxFHE',
       logo: {
-        alt: 'Fhenix',
+        alt: 'LuxFHE',
         src: 'img/logo-black.svg',
         srcDark: 'img/logo-white.svg',
-        href: 'https://fhenix.io',
+        href: 'https://luxfhe.io',
       },
       items: [
         {
@@ -118,7 +118,7 @@ const config: Config = {
         // },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/fhenixprotocol/',
+          href: 'https://github.com/luxfhe/',
           className: 'header-github-link',
           position: 'right',
         },
@@ -128,7 +128,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://twitter.com/FhenixIO',
+          href: 'https://twitter.com/LuxFHEIO',
           className: 'header-twitter-link',
           position: 'right',
         },
@@ -162,7 +162,7 @@ const config: Config = {
           items: [
             {
               label: 'Medium',
-              href: 'https://medium.com/@Fhenix',
+              href: 'https://medium.com/@LuxFHE',
             },
             {
               label: 'Discord',
@@ -170,7 +170,7 @@ const config: Config = {
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/FhenixIO',
+              href: 'https://twitter.com/LuxFHEIO',
             },
           ],
         },
@@ -179,7 +179,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/fhenixprotocol',
+              href: 'https://github.com/luxfhe',
             },
           ],
         },
@@ -193,7 +193,7 @@ const config: Config = {
       // Public API key: it is safe to commit it
       apiKey: '7053edb0c71f9da5171b05b1836adf78',
 
-      indexName: 'fhenix',
+      indexName: 'luxfhe',
 
       // Optional: see doc section below
       contextualSearch: false,

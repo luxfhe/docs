@@ -8,9 +8,9 @@ description: How to handle encrypted data coming from the user
 
 ## Overview
 
-Fhenix’s Fully Homomorphic Encryption (FHE) smart contracts handle encrypted data input differently from standard Solidity smart contracts.
+luxfhe’s Fully Homomorphic Encryption (FHE) smart contracts handle encrypted data input differently from standard Solidity smart contracts.
 
-First, Fhenix has different data types: boolean, integer and user input.
+First, luxfhe has different data types: boolean, integer and user input.
 Second, `inEuint` and `inEbool` are used for handling input data, whereas `euint` and `ebool` are used for already processed data within the contract.
 Third, conversion is required from `inEuint` to `euint` to ensure that only correctly formatted encrypted user input is processed. This is done using a helper function: `FHE.asEuintxx`.
 Finally, follow best practices. Try to minimize storing large quantities of encrypted data on-chain & optimize computation to lower gas costs; process data as needed. Also, use structured types, and avoid using raw bytes to handle encrypted data input.
@@ -48,10 +48,10 @@ The following code snippets show how to use the two methods for an encrypted tra
     }
 ```
 
-As you can see, the advantage of using `inEuint` over raw bytes is that it ensures type safety and readability. It also provides a structured approach that integrates well with the FHE.sol and fhenix.js library's functions.
+As you can see, the advantage of using `inEuint` over raw bytes is that it ensures type safety and readability. It also provides a structured approach that integrates well with the FHE.sol and luxfhe.js library's functions.
 
 ## Advantages of `inEuint`, `inEbool` and `inEaddress` Over Raw Bytes
-Fhenix strongly recommends using `inEuintxx` (and/or `inEbool`, `inEaddress`) structs instead of raw bytes to ensure type safety and readability. These structs provide a structured approach that integrates well with FHE.sol library functions. We believe that the advantages of `inEuintxx`, `inEbool` and `inEaddress` structs are more compatible with handling encrypted data and ensuring application safety, even though raw bytes may result in very slightly lower gas costs.
+luxfhe strongly recommends using `inEuintxx` (and/or `inEbool`, `inEaddress`) structs instead of raw bytes to ensure type safety and readability. These structs provide a structured approach that integrates well with FHE.sol library functions. We believe that the advantages of `inEuintxx`, `inEbool` and `inEaddress` structs are more compatible with handling encrypted data and ensuring application safety, even though raw bytes may result in very slightly lower gas costs.
 
 ### Examples
 

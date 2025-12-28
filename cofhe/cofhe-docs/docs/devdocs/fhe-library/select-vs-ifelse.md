@@ -10,7 +10,7 @@ Writing smart contracts with Fully Homomorphic Encryption (FHE) changes how we h
 Moreover, conditionals in FHE must evaluate both branches simultaneously. This is similar to constant-time cryptographic programming, where branching can leak information through timing attacks—for example, if one path takes longer to execute, an observer could infer which condition was true.
 
 ## Basic Usage
-To handle encrypted conditionals, Fhenix uses a concept called a selector—a function that takes an encrypted condition and two possible values, returning one based on the encrypted result.
+To handle encrypted conditionals, luxfhe uses a concept called a selector—a function that takes an encrypted condition and two possible values, returning one based on the encrypted result.
 
 In practice, this is done with the select function. It behaves like a ternary operator (condition ? a : b) but works entirely on encrypted data.
 

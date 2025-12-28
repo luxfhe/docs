@@ -4,10 +4,10 @@ sidebar_position: 2
 
 # Encryption
 
-fhenix.js provides an easy-to-use function to encrypt your inputs before sending them to the Fhenix blockchain.
+luxfhe.js provides an easy-to-use function to encrypt your inputs before sending them to the luxfhe blockchain.
 
 :::tip
-Encryption in Fhenix is done using the global chain key. This key is loaded when you create a fhenix.js client automatically
+Encryption in luxfhe is done using the global chain key. This key is loaded when you create a luxfhe.js client automatically
 :::
 
 When we perform encryption, we specify the type of `euint` (Encrypted Integer) we want to create. This should match the expected type in the Solidity contract we are working with.
@@ -15,18 +15,18 @@ When we perform encryption, we specify the type of `euint` (Encrypted Integer) w
 First, initialize the library:
 
 ```Typescript
-import { FhenixClient } from 'fhenixjs';
+import { luxfheClient } from 'luxfhejs';
 import { BrowserProvider } from "ethers";
 
 const provider = new BrowserProvider(window.ethereum);
 
-const client = new FhenixClient({provider});
+const client = new luxfheClient({provider});
 ```
 Then, you can use the created client to encrypt
 
 ```Typescript
 
-import { FhenixClient, EncryptedType, EncryptedUint8 } from 'fhenixjs';
+import { luxfheClient, EncryptedType, EncryptedUint8 } from 'luxfhejs';
 
 let result: EncryptedUint8 = await client.encrypt(number, EncryptionTypes.uint8);
 let result: EncryptedUint16 = await client.encrypt(number, EncryptionTypes.uint16);

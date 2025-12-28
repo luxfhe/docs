@@ -33,7 +33,7 @@ The following diagram illustrates the complete flow of an FHE operation request 
 ### 📌 Step 1: Integration with Cofhejs
 
 1. The decentralized application (dApp) integrates with CoFHE by utilizing **Cofhejs** for encryption.
-[See in GitHub](https://github.com/FhenixProtocol/cofhe.js) ![Bullet](../../../../static/img/assets/1.png)
+[See in GitHub](https://github.com/luxfheProtocol/cofhe.js) ![Bullet](../../../../static/img/assets/1.png)
 
 2. [Encrypt request](./encryption-request.md) using Cofhejs, returns `InEuint` structure.
 
@@ -44,7 +44,7 @@ The following diagram illustrates the complete flow of an FHE operation request 
 When the dApp needs to perform an encrypted operation within the smart contract: ![Bullet](../../../../static/img/assets/2.png)
 1. **Import the FHE library in Solidity**:
    ```solidity
-   import "@fhenixprotocol/cofhe-contracts/FHE.sol";
+   import "@luxfheprotocol/cofhe-contracts/FHE.sol";
    ```
 
 2. **Call the appropriate FHE function** from the imported library:

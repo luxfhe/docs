@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Permits Management
 
-Permits are a crucial security mechanism in Fhenix that allow users to authenticate themselves when accessing encrypted data through off-chain operations like `sealoutput` and `decrypt`. These operations are exposed and handled by `cofhejs`.
+Permits are a crucial security mechanism in luxfhe that allow users to authenticate themselves when accessing encrypted data through off-chain operations like `sealoutput` and `decrypt`. These operations are exposed and handled by `cofhejs`.
 
 ## Quick Start
 
@@ -54,7 +54,7 @@ Here's an example modal that explains permits to users:
 const PermitModal = () => (
 	<div className='permit-modal'>
 		<h2>Sign a Permit</h2>
-		<p>Permits grant secure access to your encrypted data on Fhenix by authenticating you with your signature. Each permit:</p>
+		<p>Permits grant secure access to your encrypted data on luxfhe by authenticating you with your signature. Each permit:</p>
 		<ul>
 			<li>Is valid for 24 hours</li>
 			<li>Can only be used by you</li>

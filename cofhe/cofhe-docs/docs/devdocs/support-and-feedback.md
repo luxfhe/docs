@@ -14,7 +14,7 @@ We believe in building together as a community. Our team is genuinely excited to
 
 ### Documentation
 
-If you find issues with our documentation, have suggestions for improvements, or want to request new content visit our [Documentation Repository](https://github.com/FhenixProtocol/cofhe-docs/issues):
+If you find issues with our documentation, have suggestions for improvements, or want to request new content visit our [Documentation Repository](https://github.com/luxfheProtocol/cofhe-docs/issues):
 
 1. Create a new issue describing the problem or enhancement
 2. Use labels like "documentation", "bug", or "enhancement" to help us categorize your feedback

@@ -150,7 +150,7 @@ The first thing that we need to do is import `FHE.sol` from the `cofhe-contracts
 pragma solidity ^0.8.25;
 
 // diff-add
-import {FHE, euint64, InEuint64} from "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import {FHE, euint64, InEuint64} from "@luxfheprotocol/cofhe-contracts/FHE.sol";
 
 contract VotingExample {
 ```
@@ -570,7 +570,7 @@ The resulting contract provides the same functionality as the original, but with
 
 pragma solidity ^0.8.25;
 
-import {FHE, euint64, InEuint8} from "@fhenixprotocol/cofhe-contracts/FHE.sol";
+import {FHE, euint64, InEuint8} from "@luxfheprotocol/cofhe-contracts/FHE.sol";
 
 contract FHEVotingExample {
     struct Option {

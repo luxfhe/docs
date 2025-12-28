@@ -33,13 +33,13 @@ function HomepageHeader() {
 
                           <Heading as="h1" className="hero__title">
                               { /* siteConfig.title */} 
-                              <img className="fhenix-logo" alt="fhenix image" src="img/fhenix-logo-build.webp" />
+                              <img className="luxfhe-logo" alt="luxfhe image" src="img/luxfhe-logo-build.webp" />
                           </Heading>
                       </div>
                       <div className="row">
                           {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
                           <p className="home__description">
-                          Tools and resources to help you build, launch, and grow your app on Fhenix
+                          Tools and resources to help you build, launch, and grow your app on LuxFHE
                           </p>
                       </div>
                       <div className={clsx("row", styles.ButtonRow)} style={{ marginLeft: -30 }}>
@@ -79,7 +79,7 @@ function HomepageHeader() {
 
                   <div className="hide-small-width" style={{marginTop: "-100px"}}>
                   {/* <div className="" style={{marginTop: "-100px"}}> */}
-                  { (colorMode === 'dark') ? <img className="page-cover-image" alt="fhenix stuttershock image" src="img/page-cover-dark-2.webp" style={{maxWidth: '450px'}}/> : <img className="page-cover-image" alt="fhenix stuttershock image" src="img/page-cover-dark-2.webp" style={{maxWidth: '450px'}}/>}
+                  { (colorMode === 'dark') ? <img className="page-cover-image" alt="luxfhe stuttershock image" src="img/page-cover-dark-2.webp" style={{maxWidth: '450px'}}/> : <img className="page-cover-image" alt="luxfhe stuttershock image" src="img/page-cover-dark-2.webp" style={{maxWidth: '450px'}}/>}
                   </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function Home(): JSX.Element {
 
     return (
         <Layout title={`${siteConfig.title}`}
-                description="Documentation for Fhenix, the pioneering FHE-enabled L2. Explore how Fhenix is transforming privacy in Blockchain.">
+                description="Documentation for LuxFHE, the pioneering FHE-enabled L2. Explore how LuxFHE is transforming privacy in Blockchain.">
             <div className="background-circle"></div>
             <HomepageHeader />
             <main>

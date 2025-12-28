@@ -55,10 +55,10 @@ const FeatureList: FeatureItem[] = [
 
   //   description: (
   //     <>
-  //         Get funds to grow projects & communities in the Fhenix ecosystem
+  //         Get funds to grow projects & communities in the LuxFHE ecosystem
   //     </>
   //   ),
-  //     linkTo: "https://www.fhenix.io/grant-program/",
+  //     linkTo: "https://www.luxfhe.io/grant-program/",
   //     buttonTitle: "Get Started"
   // }
 ];
@@ -171,8 +171,8 @@ export default function HomepageFeatures(): JSX.Element {
           </div>
           <div className="row" style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '40px', gap: '20px'}}>
             <div className={clsx("card", styles.custom__card_1)} style={{ height: '200px', width: '500px', padding: '20px' }}>
-              <div className="orb-font" style={{ fontSize: 26, fontWeight: 'bold' }}>Fhenix Developer Updates</div>
-              <div>Stay up-to-date on the latest Fhenix developer news</div>
+              <div className="orb-font" style={{ fontSize: 26, fontWeight: 'bold' }}>LuxFHE Developer Updates</div>
+              <div>Stay up-to-date on the latest LuxFHE developer news</div>
               <div className="row" style={{ flex: 1 }}></div>
               <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '10px' }}>
                 <Link
@@ -185,14 +185,14 @@ export default function HomepageFeatures(): JSX.Element {
             </div>
             <div className={clsx("card", styles.custom__card_1)} style={{ height: '200px', width: '500px', padding: '20px' }}>
             <div className="orb-font" style={{ fontSize: 26, fontWeight: 'bold' }}>Even More Resources</div>
-              <div>Hear from Fhenix co-founders, engineering and research teams, ecosystem projects, and more. Join us!</div>
+              <div>Hear from LuxFHE co-founders, engineering and research teams, ecosystem projects, and more. Join us!</div>
               <div className="row" style={{ flex: 1 }}></div>
               <div style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '10px' }}>
                 
               <div style={{ display: 'flex', gap: '20px' }}>
                 <Link
                     className='tutorial-button'
-                    to={"https://twitter.com/FhenixIO"}>
+                    to={"https://twitter.com/LuxFHEIO"}>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: "center", gap: '10px' }}> 
                       X / Twitter <img src="img/x.svg" style={{ width: '15px'}}/>
                     </div>

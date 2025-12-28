@@ -33,9 +33,9 @@ When calling `getBalanceEncrypted()`, the user includes their off-chain generate
 ```javascript
 pragma solidity ^0.8.20;
 
-import "@fhenixprotocol/contracts/access/Permissioned.sol";
+import "@luxfheprotocol/contracts/access/Permissioned.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/FHE.sol";
 
 contract WrappingERC20 is ERC20, Permissioned {
 

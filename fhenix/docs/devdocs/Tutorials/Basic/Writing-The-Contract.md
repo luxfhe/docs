@@ -24,7 +24,7 @@ Let's run through the different functions, step-by-step and show how we can impl
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/FHE.sol";
 ```
 
 The OpenZeppelin ERC20 contract will provide the basic functionality of the ERC20 token, while `FHE.sol` is necessary to create and use FHE. 
@@ -162,7 +162,7 @@ Let's see what the entire code looks like:
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-import "@fhenixprotocol/contracts/FHE.sol";
+import "@luxfheprotocol/contracts/FHE.sol";
 
 contract WrappingERC20 is ERC20 {
 
@@ -207,7 +207,7 @@ contract WrappingERC20 is ERC20 {
 ```
 
 Note that in a real use case the actual code would include more functionality, and structure things a bit differently. 
-If you want to see what such a contract looks like, you can check out the [FHERC20](https://github.com/FhenixProtocol/fhenix-contracts/blob/main/contracts/experimental/token/FHERC20/FHERC20.sol) contract in the Fhenix contracts repository.
+If you want to see what such a contract looks like, you can check out the [FHERC20](https://github.com/luxfheProtocol/luxfhe-contracts/blob/main/contracts/experimental/token/FHERC20/FHERC20.sol) contract in the luxfhe contracts repository.
 
 ### Wait a second...
 

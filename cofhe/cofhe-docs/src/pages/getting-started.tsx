@@ -8,7 +8,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
       <Layout title={`${siteConfig.title}`}
-              description="Documentation for Fhenix, the pioneering FHE-enabled L2. Explore how Fhenix is transforming privacy in Blockchain.">
+              description="Documentation for LuxFHE, the pioneering FHE-enabled L2. Explore how LuxFHE is transforming privacy in Blockchain.">
           <div className="background-circle"></div>
           <main>
               <GettingStartedFrame/>
