@@ -1,0 +1,107 @@
+---
+title: Quickstart
+description: Get started with Lux FHE in 5 minutes
+---
+
+# Quickstart
+
+Get up and running with Lux FHE in minutes.
+
+## Installation
+
+<Tabs items={['Python', 'Go', 'Rust', 'Node.js']}>
+  <Tab>
+    ```bash
+    pip install luxfhe
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    go get github.com/luxfi/fhe
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    cargo add luxfhe
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    npm install @luxfhe/core
+    ```
+  </Tab>
+</Tabs>
+
+## Basic Example
+
+<Tabs items={['Python', 'Go', 'Rust', 'Node.js']}>
+  <Tab>
+    ```python
+    from luxfhe import Client, Server
+
+    # Client encrypts
+    client = Client()
+    a = client.encrypt(42)
+    b = client.encrypt(8)
+
+    # Server computes
+    server = Server(client.evaluation_key)
+    result = server.add(a, b)
+
+    # Client decrypts
+    print(client.decrypt(result))  # 50
+    ```
+  </Tab>
+  <Tab>
+    ```go
+    import "github.com/luxfi/fhe"
+
+    client, _ := fhe.NewClient()
+    server, _ := fhe.NewServer(client.EvaluationKey())
+
+    a, _ := client.Encrypt(42)
+    b, _ := client.Encrypt(8)
+
+    result, _ := server.Add(a, b)
+
+    fmt.Println(client.Decrypt(result)) // 50
+    ```
+  </Tab>
+  <Tab>
+    ```rust
+    use luxfhe::{Client, Server};
+
+    let client = Client::new()?;
+    let server = Server::new(client.evaluation_key())?;
+
+    let a = client.encrypt(42u64)?;
+    let b = client.encrypt(8u64)?;
+
+    let result = server.add(&a, &b)?;
+
+    println!("{}", client.decrypt::<u64>(&result)?); // 50
+    ```
+  </Tab>
+  <Tab>
+    ```typescript
+    import { Client, Server } from '@luxfhe/core';
+
+    const client = await Client.create();
+    const server = await Server.create(client.evaluationKey);
+
+    const a = await client.encrypt(42n);
+    const b = await client.encrypt(8n);
+
+    const result = await server.add(a, b);
+
+    console.log(await client.decrypt(result)); // 50n
+    ```
+  </Tab>
+</Tabs>
+
+## Next Steps
+
+- [Learn FHE concepts](/concepts/what-is-fhe)
+- [Private ML tutorial](/guides/private-ml)
+- [Private agents](/guides/private-agents)
+- [API reference](/api/python)

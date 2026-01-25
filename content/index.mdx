@@ -1,0 +1,52 @@
+---
+title: Lux FHE Documentation
+description: Fully Homomorphic Encryption for Everyone
+---
+
+# Lux FHE
+
+**Compute on encrypted data without ever decrypting it.**
+
+Lux FHE is an open-source ecosystem for building privacy-preserving applications using Fully Homomorphic Encryption.
+
+## What is FHE?
+
+Fully Homomorphic Encryption allows computations on encrypted data. The server performing the computation never sees the plaintext data.
+
+```python
+from luxfhe import Client, Server
+
+# Client encrypts sensitive data
+client = Client()
+encrypted_data = client.encrypt(sensitive_value)
+
+# Server computes on encrypted data
+server = Server(client.evaluation_key)
+result = server.add(encrypted_data, encrypted_other)
+
+# Client decrypts result
+plaintext_result = client.decrypt(result)
+# Server NEVER saw sensitive_value!
+```
+
+## Use Cases
+
+### Private Machine Learning
+Train and run models on encrypted data. Patient records, financial data, and sensitive information stay encrypted throughout.
+
+### Private Agents
+AI agents operate on encrypted context. Your personal data never leaves your control.
+
+### Confidential Computing
+Execute business logic on encrypted inputs. Trade secrets and competitive data stay private.
+
+### Private Smart Contracts
+Blockchain applications with encrypted state. Balances, votes, and bids remain confidential.
+
+## Quick Links
+
+- [Getting Started →](/guides/quickstart)
+- [Installation →](/guides/installation)
+- [Concepts →](/concepts/what-is-fhe)
+- [API Reference →](/api/python)
+- [Examples →](https://github.com/luxfhe/examples)

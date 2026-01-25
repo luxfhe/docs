@@ -1,0 +1,89 @@
+---
+title: What is FHE?
+description: Understanding Fully Homomorphic Encryption
+---
+
+# What is Fully Homomorphic Encryption?
+
+Fully Homomorphic Encryption (FHE) is a cryptographic technique that allows computations on encrypted data without decrypting it first.
+
+## The Problem
+
+Traditional encryption has a fundamental limitation:
+
+```
+┌─────────────┐         ┌─────────────┐         ┌─────────────┐
+│  Plaintext  │ ──▶ │  Ciphertext │ ──▶ │  Plaintext  │
+│    Data     │ encrypt │    Data     │ decrypt │    Data     │
+└─────────────┘         └─────────────┘         └─────────────┘
+                              │
+                              │ ❌ Can't compute!
+                              ▼
+```
+
+To process encrypted data, you must decrypt it first—exposing it to the server.
+
+## The FHE Solution
+
+FHE allows computation directly on encrypted data:
+
+```
+┌─────────────┐         ┌─────────────┐         ┌─────────────┐
+│  Plaintext  │ encrypt │  Encrypted  │ decrypt │  Plaintext  │
+│   a = 42    │ ──────▶ │    E(a)     │ ──────▶ │    50       │
+│   b = 8     │         │    E(b)     │         │             │
+└─────────────┘         └─────────────┘         └─────────────┘
+        │                     │                       ▲
+        │                     ▼                       │
+        │              ┌─────────────┐                │
+        │              │   Server    │                │
+        │              │  E(a) + E(b)│ ═══════════════╝
+        │              │    = E(50)  │
+        │              └─────────────┘
+        │                     │
+        │                     │ ✅ Computed without seeing a or b!
+        └─────────────────────┘
+```
+
+## Key Properties
+
+### Homomorphism
+Operations on ciphertexts produce valid ciphertexts:
+- `Decrypt(E(a) + E(b)) = a + b`
+- `Decrypt(E(a) × E(b)) = a × b`
+
+### Security
+Based on hard mathematical problems (lattice cryptography).
+Even with quantum computers, the encryption remains secure.
+
+### Privacy
+The server performing computation never sees the plaintext data.
+
+## Types of FHE
+
+| Type | Operations | Performance | Use Case |
+|------|------------|-------------|----------|
+| **TFHE** | Boolean gates | Fast bootstrapping | General computation |
+| **CKKS** | Approximate arithmetic | Best for ML | Neural networks |
+| **BGV/BFV** | Exact integer | Moderate | Integer computation |
+
+Lux FHE primarily uses **TFHE** with optimizations for practical performance.
+
+## Limitations
+
+1. **Performance**: FHE operations are slower than plaintext (10-1000×)
+2. **Noise**: Ciphertexts accumulate noise; must be "bootstrapped"
+3. **Memory**: Ciphertexts are larger than plaintexts
+
+## When to Use FHE
+
+✅ **Good fit:**
+- Processing sensitive data (medical, financial)
+- ML inference on private data
+- Confidential computation in untrusted environments
+- Privacy-preserving analytics
+
+❌ **Not ideal for:**
+- High-throughput, low-latency requirements
+- Simple operations where other PETs suffice
+- Public data processing

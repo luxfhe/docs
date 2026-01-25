@@ -1,0 +1,110 @@
+---
+title: Python API
+description: Lux FHE Python API Reference
+---
+
+# Python API Reference
+
+## Installation
+
+```bash
+pip install luxfhe
+
+# With ML support
+pip install luxfhe[ml]
+
+# With agents support
+pip install luxfhe[agents]
+
+# Everything
+pip install luxfhe[all]
+```
+
+## Core Classes
+
+### Client
+
+Manages private keys and encryption/decryption.
+
+```python
+from luxfhe import Client
+
+client = Client()
+
+# Encrypt values
+ct = client.encrypt(42)
+ct_bool = client.encrypt(True)
+ct_array = client.encrypt_array([1, 2, 3, 4])
+ct_json = client.encrypt_json({"key": "value"})
+
+# Decrypt values
+value = client.decrypt(ct)
+bool_value = client.decrypt(ct_bool)
+array = client.decrypt_array(ct_array)
+data = client.decrypt_json(ct_json)
+
+# Get evaluation key (safe to share)
+eval_key = client.evaluation_key
+```
+
+### Server
+
+Performs homomorphic operations (no private key).
+
+```python
+from luxfhe import Server
+
+server = Server(client.evaluation_key)
+
+# Arithmetic
+ct_sum = server.add(ct_a, ct_b)
+ct_diff = server.sub(ct_a, ct_b)
+ct_prod = server.mul(ct_a, ct_b)
+ct_neg = server.neg(ct_a)
+
+# Comparisons
+ct_lt = server.lt(ct_a, ct_b)   # a < b
+ct_gt = server.gt(ct_a, ct_b)   # a > b
+ct_eq = server.eq(ct_a, ct_b)   # a == b
+ct_lte = server.lte(ct_a, ct_b) # a <= b
+ct_gte = server.gte(ct_a, ct_b) # a >= b
+
+# Bitwise
+ct_and = server.and_(ct_a, ct_b)
+ct_or = server.or_(ct_a, ct_b)
+ct_xor = server.xor(ct_a, ct_b)
+ct_not = server.not_(ct_a)
+
+# Conditional
+ct_result = server.select(ct_condition, ct_if_true, ct_if_false)
+```
+
+## ML Module
+
+```python
+from luxfhe.ml import EncryptedLinearRegression, EncryptedLogisticRegression
+
+# Train on encrypted data
+model = EncryptedLinearRegression()
+model.fit(server, X_encrypted, y_encrypted)
+
+# Predict on encrypted data
+y_pred = model.predict(server, X_test_encrypted)
+```
+
+## Agents Module
+
+```python
+from luxfhe.agents import PrivateAgent
+
+agent = PrivateAgent(
+    model="gpt-4-turbo",
+    fhe_server=server,
+    system_prompt="You are a helpful assistant."
+)
+
+response = agent.run(
+    query="What should I do?",
+    encrypted_context=client.encrypt_json(sensitive_data)
+)
+```
