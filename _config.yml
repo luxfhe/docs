@@ -1,0 +1,17 @@
+title: Lux FHE Documentation
+description: Fully Homomorphic Encryption for Everyone
+theme: jekyll-theme-minimal
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - "*.py"
+  - "__pycache__"
+  - "*.pyc"
+  - "conftest.py"
