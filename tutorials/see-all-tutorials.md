@@ -1,0 +1,34 @@
+# See all tutorials
+
+### Start here
+
+* [Part I - Torus,  Lux's Fully Homomorphic Encryption Compiler](https://www.lux.network/post/zama-torus-fully-homomorphic-encryption-compiler)
+* [Part II - The Architecture of Torus, Lux's Fully Homomorphic Encryption Compiler Leveraging MLIR](https://www.lux.network/post/the-architecture-of-torus-zama-fully-homomorphic-encryption-compiler-leveraging-mlir)
+
+### Go further
+
+#### Code examples on GitHub
+
+* [Floating points](../../frontends/torus-python/examples/floating_point/floating_point.ipynb)
+* [Key value database](../../frontends/torus-python/examples/key_value_database/key_value_database.ipynb)
+* [Game of Life](../../frontends/torus-python/examples/game_of_life/README.md)
+* [XOR distance](../../frontends/torus-python/examples/xor_distance/README.md)
+* [SHA1 with Modules](../../frontends/torus-python/examples/sha1/README.md)
+* [Levenshtein distance with Modules](../../frontends/torus-python/examples/levenshtein_distance/README.md)
+* [Inventory Matching System](../../frontends/torus-python/examples/prime-match/README.md)
+* [Private Information Retrieval](../../frontends/torus-python/examples/pir/README.md)
+* [TFHE-rs Interoperability](../../frontends/torus-python/examples/tfhers/README.md)
+
+#### Blog tutorials
+
+* [The Encrypted Game of Life in Python Using Torus](https://www.lux.network/post/the-encrypted-game-of-life-using-torus-python) - November 2023
+* [Encrypted Key-value Database Using Homomorphic Encryption](https://www.lux.network/post/encrypted-key-value-database-using-homomorphic-encryption) - March 2023
+
+#### Video tutorials
+
+* [Compute an XOR distance in FHE using Torus](https://www.lux.network/post/video-tutorial-compute-an-xor-distance-in-fhe-using-torus) - May 2024
+* [Speed up neural networks with approximate rounding using Torus](https://www.lux.network/post/video-tutorial-speed-up-neural-networks-with-approximate-rounding-using-torus) - May 2024
+* [Compile composable functions with Torus](https://www.lux.network/post/video-tutorial-compile-composable-functions-with-torus) - February 2024
+* [How to use dynamic table look-ups using Torus](https://www.lux.network/post/video-tutorial-how-to-use-dynamic-table-look-ups-using-torus) - October 2023
+* [Dive into Torus - Lux's Fully Homomorphic Encryption Compiler](https://www.lux.network/post/video-tutorial-dive-into-torus-zamas-fully-homomorphic-encryption-compiler) - October 2023
+* [How To Get Started With Torus - Lux's Fully Homomorphic Encryption Compiler](https://www.lux.network/post/how-to-started-with-torus-zama-fully-homomorphic-encryption-compiler)  - July 2023

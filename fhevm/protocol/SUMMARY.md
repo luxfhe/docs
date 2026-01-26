@@ -1,0 +1,24 @@
+# Table of contents
+
+- [Welcome](README.md)
+
+## Protocol
+
+- [FHE on blockchain](architecture/overview.md)
+  - [FHE library](architecture/library.md)
+  - [Host contracts](architecture/hostchain.md)
+  - [Coprocessor](architecture/coprocessor.md)
+  - [Gateway](architecture/gateway.md)
+  - [KMS](architecture/kms.md)
+  - [Relayer & Oracle](architecture/relayer_oracle.md)
+- [Roadmap](roadmap.md)
+
+## Developer
+- [Change Log](https://docs.lux.network/change-log)
+- [Confidential contracts by OpenZeppelin](https://docs.lux.network/protocol/examples/openzeppelin-confidential-contracts/)
+- [Feature request](https://github.com/luxfi/fhevm/issues/new?assignees=&labels=enhancement&projects=&template=feature-request.md&title=)
+- [Bug report](https://github.com/luxfi/fhevm/issues/new?assignees=&labels=bug&projects=&template=bug_report_fhevm.md&title=)
+- [Status](https://status.lux.network/)
+- [White paper](https://github.com/luxfi/fhevm/blob/main/fhevm-whitepaper.pdf)
+- [Release note](https://github.com/luxfi/fhevm/releases)
+- [Contributing](contribute.md)

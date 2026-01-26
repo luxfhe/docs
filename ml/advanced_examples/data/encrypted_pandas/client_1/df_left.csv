@@ -1,0 +1,10 @@
+index,total_bill,tip,sex,smoker
+client_1,12.54,2.5,Male,No
+client_2,11.17,1.5,Female,No
+client_3,20.29,2.75,Female,No
+client_4,14.07,2.5,Male,No
+client_5,15.69,3.0,Male,Yes
+client_6,18.29,3.0,Male,No
+client_7,16.93,3.07,Female,No
+client_8,24.27,2.03,Male,Yes
+client_9,8.77,2.0,Male,No
