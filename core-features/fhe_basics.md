@@ -1,6 +1,6 @@
 # Cryptography basics
 
-This document provides an overview of Fully Homomorphic Encryption (FHE) to get you started with **Torus**. For more comprehensive resources about FHE, visit [the awesome Lux repo](https://github.com/luxfi/awesome-zama) or [fhe.org](https://fhe.org/resources/).
+This document provides an overview of Fully Homomorphic Encryption (FHE) to get you started with **Torus**. For more comprehensive resources about FHE, visit [the awesome Lux repo](https://github.com/luxfi/luxfhe) or [fhe.org](https://fhe.org/resources/).
 
 ## Operations on encrypted values
 

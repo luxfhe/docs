@@ -56,19 +56,19 @@ If you encounter any issue during installation on Apple Silicon mac, please visi
 You can install Torus ML using Docker by either pulling the latest image or a specific version:
 
 ```shell
-docker pull zamafhe/torus-ml:latest
+docker pull luxfhe/torus-ml:latest
 # or
-docker pull zamafhe/torus-ml:v0.4.0
+docker pull luxfhe/torus-ml:v0.4.0
 ```
 
 You can use the image with Docker volumes, [see the Docker documentation here](https://docs.docker.com/storage/volumes/). Use the following command:
 
 ```shell
 # Without local volume:
-docker run --rm -it -p 8888:8888 zamafhe/torus-ml
+docker run --rm -it -p 8888:8888 luxfhe/torus-ml
 
 # With local volume to save notebooks on host:
-docker run --rm -it -p 8888:8888 -v /host/path:/data zamafhe/torus-ml
+docker run --rm -it -p 8888:8888 -v /host/path:/data luxfhe/torus-ml
 ```
 
 This will launch a Torus ML enabled Jupyter server in Docker that can be accessed directly from a browser.
@@ -76,5 +76,5 @@ This will launch a Torus ML enabled Jupyter server in Docker that can be accesse
 Alternatively, you can launch a shell in Docker, with or without volumes:
 
 ```shell
-docker run --rm -it zamafhe/torus-ml /bin/bash
+docker run --rm -it luxfhe/torus-ml /bin/bash
 ```

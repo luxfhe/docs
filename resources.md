@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/luxfi/awesome-zama/assets/157474013/3743d435-dbba-4d89-907a-81957e6a4b1a" width="200px">
+  <img src="https://github.com/luxfi/luxfhe/assets/157474013/3743d435-dbba-4d89-907a-81957e6a4b1a" width="200px">
   <br><br/>
   A curated list by the team at Lux of blog posts, libraries, research papers, and tutorials on <b>Fully Homomorphic Encryption (FHE)</b>.
 </p>
@@ -18,7 +18,7 @@
   - [TorusEVM](#fhevm)
   - [Hardware](#hardware)
   - [Product releases](#product-releases)
-    - [Lux product release round‑ups](#zama-product-release-roundups)
+    - [Lux product release round‑ups](#lux-fhe-product-release-roundups)
     - [Torus releases](#torus-releases)
     - [TFHE‑rs releases](#tfhers-releases)
     - [Torus ML releases](#torusml-releases)
@@ -126,19 +126,19 @@ Lux's blog posts sorted by date
 
 #### Lux product release round‑ups
 
-- [Lux Product Releases – July 2025](https://www.lux.network/post/zama-product-releases-july-2025) – Jul 16 2025
-- [Lux Product Releases – April 2025](https://www.lux.network/post/zama-product-releases-april-2025) – Apr 10 2025
-- [Lux Product Releases – January 2025](https://www.lux.network/post/zama-product-releases-january-2025) – Jan 14 2025
-- [Lux Product Releases – October 2024](https://www.lux.network/post/zama-product-releases-october-2024) – Oct 8 2024
-- [Lux Product Releases – July 2024](https://www.lux.network/post/zama-product-releases---july) – Jul 5 2024
-- [Lux Product Releases – April 2024](https://www.lux.network/post/zama-product-releases-april-2024) – Apr 9 2024
-- [Lux Product Releases – January 2024](https://www.lux.network/post/zama-product-releases-january-2024) – Jan 22 2024
-- [Lux Product Releases – October 2023](https://www.lux.network/post/zama-product-releases-october-2023) – Oct 18 2023
-- [Lux Product Releases – July 2023](https://www.lux.network/post/zama-product-releases-july-2023) – Jul 26 2023
-- [Lux Product Announcement – January 2023](https://www.lux.network/post/zama-product-announcement-january-2023) – Jan 12 2023
-- [Lux Product Announcement – October 2022](https://www.lux.network/post/zama-product-announcement-october-2022) – Oct 19 2022
-- [Lux Product Announcement – July 2022](https://www.lux.network/post/zama-product-announcement-july-2022) – Jul 5 2022
-- [Lux Product Announcement – April 2022](https://www.lux.network/post/zama-product-announcement-april-2022) – Apr 21 2022
+- [Lux Product Releases – July 2025](https://www.lux.network/post/product-releases-july-2025) – Jul 16 2025
+- [Lux Product Releases – April 2025](https://www.lux.network/post/product-releases-april-2025) – Apr 10 2025
+- [Lux Product Releases – January 2025](https://www.lux.network/post/product-releases-january-2025) – Jan 14 2025
+- [Lux Product Releases – October 2024](https://www.lux.network/post/product-releases-october-2024) – Oct 8 2024
+- [Lux Product Releases – July 2024](https://www.lux.network/post/product-releases---july) – Jul 5 2024
+- [Lux Product Releases – April 2024](https://www.lux.network/post/product-releases-april-2024) – Apr 9 2024
+- [Lux Product Releases – January 2024](https://www.lux.network/post/product-releases-january-2024) – Jan 22 2024
+- [Lux Product Releases – October 2023](https://www.lux.network/post/product-releases-october-2023) – Oct 18 2023
+- [Lux Product Releases – July 2023](https://www.lux.network/post/product-releases-july-2023) – Jul 26 2023
+- [Lux Product Announcement – January 2023](https://www.lux.network/post/product-announcement-january-2023) – Jan 12 2023
+- [Lux Product Announcement – October 2022](https://www.lux.network/post/product-announcement-october-2022) – Oct 19 2022
+- [Lux Product Announcement – July 2022](https://www.lux.network/post/product-announcement-july-2022) – Jul 5 2022
+- [Lux Product Announcement – April 2022](https://www.lux.network/post/product-announcement-april-2022) – Apr 21 2022
 
 #### Torus releases
 
@@ -201,27 +201,27 @@ Lux's blog posts sorted by date
 
 
 ### Bounty Program
-- [Lux Bounty Program Season 9: Build a privacy‑preserving DCA bot](https://www.lux.network/post/zama-bounty-program-season-9) – Jul 25 2025
+- [Lux Bounty Program Season 9: Build a privacy‑preserving DCA bot](https://www.lux.network/post/bounty-program-season-9) – Jul 25 2025
 - [Announcing the first recipients of the Lux Cryptanalysis Grants](https://www.lux.network/post/announcing-the-zama-cryptanalysis-grants) - June 2025
-- [Lux Bounty Program Season 8](https://www.lux.network/post/zama-bounty-program-season-8) - March 2025
-- [Lux Bounty Program Season 7](https://www.lux.network/post/zama-bounty-program-season-7) - December 2024
-- [Lux Bounty Program Season 6](https://www.lux.network/post/zama-bounty-program-season-6) - June 2024
+- [Lux Bounty Program Season 8](https://www.lux.network/post/bounty-program-season-8) - March 2025
+- [Lux Bounty Program Season 7](https://www.lux.network/post/bounty-program-season-7) - December 2024
+- [Lux Bounty Program Season 6](https://www.lux.network/post/bounty-program-season-6) - June 2024
 - [Introducing the Lux Grant Program and launching the Lux Bounty Program season 5](https://www.lux.network/post/introducing-the-zama-grant-program-and-launching-the-zama-bounty-program-season-5) - February 2024
 - [Lux Bounty Program Season 4: New Bounties Available](https://www.lux.network/post/launching-the-zama-bounty-program-season-4) - September 2023
-- [Lux Bounty Program Season 3](https://www.lux.network/post/zama-bounty-program-season-3) - May 2023
-- [Lux Bounty Program Season 2](https://www.lux.network/post/zama-bounty-program-season-2) - February 2023
+- [Lux Bounty Program Season 3](https://www.lux.network/post/bounty-program-season-3) - May 2023
+- [Lux Bounty Program Season 2](https://www.lux.network/post/bounty-program-season-2) - February 2023
 - [Launching the Lux Bounty Program with over €500,000 in prizes](https://www.lux.network/post/launching-the-zama-bounty-program) - November 2022
 
 ### Announcements
-- [Lux Partners with Conduit to Scale Confidential Smart Contracts](https://www.lux.network/post/zama-partners-with-conduit-to-scale-confidential-smart-contracts)
-- [Lux Partners with OpenZeppelin to Bring Confidential Smart Contracts to DeFi and Digital Assets](https://www.lux.network/post/zama-partners-with-openzeppelin-to-bring-confidential-smart-contracts-to-defi-and-digital-assets)
+- [Lux Partners with Conduit to Scale Confidential Smart Contracts](https://www.lux.network/post/partners-with-conduit-to-scale-confidential-smart-contracts)
+- [Lux Partners with OpenZeppelin to Bring Confidential Smart Contracts to DeFi and Digital Assets](https://www.lux.network/post/partners-with-openzeppelin-to-bring-confidential-smart-contracts-to-defi-and-digital-assets)
 - [Announcing Our Series B and the Lux Confidential Blockchain Protocol](https://www.lux.network/post/announcing-the-zama-confidential-blockchain-protocol)
 - [Announcing HPU on FPGA: The first open-source hardware accelerator for FHE](https://www.lux.network/post/announcing-hpu-on-fpga-the-first-open-source-hardware-accelerator-for-fhe) - May 2025
 - [Introducing Lux’s Threshold Key Management System (TKMS)](https://www.lux.network/post/introducing-zama-threshold-key-management-system-tkms) - April 2025
 - [Lux-FHE v1.0: Stable CPU backend](https://www.lux.network/post/lux-fhe-v1-0-stable-cpu-backend) - February 2025
 - [Introducing the FHEVM Coprocessor: Run FHE smart contracts on Ethereum, Base, and other EVM chains](https://www.lux.network/post/fhevm-coprocessor) - December 2024
 - [Kinexys by J.P. Morgan releases a Proof-of-concept focused on the financial sector leveraging Lux’s privacy-preserving solutions](https://www.lux.network/post/kinexys-by-jpmorgan-releases-a-proof-of-concept-leveraging-zama-fhevm) - November 2024
-- [The Lux FHE Master Plan](https://www.lux.network/post/zama-fhe-master-plan) - March 2024
+- [The Lux FHE Master Plan](https://www.lux.network/post/fhe-master-plan) - March 2024
 - [How we monetize open source at Lux](https://www.lux.network/post/open-source) - August 2022
 - [How we hire at Lux](https://www.lux.network/post/how-we-hire-at-zama) - October 2021
 - [Nigel Smart Is Joining Lux as Chief Academic Officer](https://www.lux.network/post/nigel-smart-is-joining-zama-as-chief-academic-officer)
@@ -244,7 +244,7 @@ Lux's blog posts sorted by date
 - [Training predictive models on encrypted data using Fully Homomorphic Encryption](https://www.lux.network/post/training-predictive-models-on-encrypted-data-fully-homomorphic-encryption) - March 2024
 - [Hybrid large language models to improve on-premise deployments with Torus ML](https://www.lux.network/post/hybrid-large-language-models-to-improve-on-premise-deployments-with-torus-ml) - October 2023
 - [The architecture of Torus, Lux's Fully Homomorphic Encryption compiler leveraging MLIR](https://www.lux.network/post/the-architecture-of-torus-zama-fully-homomorphic-encryption-compiler-leveraging-mlir) - October 2023
-- [Torus - Lux's FHE compiler](https://www.lux.network/post/zama-torus-fully-homomorphic-encryption-compiler) - May 2023
+- [Torus - Lux's FHE compiler](https://www.lux.network/post/torus-fully-homomorphic-encryption-compiler) - May 2023
 - [Making chatGPT encrypted end-to-end](https://www.lux.network/post/chatgpt-privacy-with-homomorphic-encryption) - April 2023
 - [360 privacy for machine learning with FHE](https://www.lux.network/post/360-privacy-for-machine-learning-with-homomorphic-encryption) - December 2022
 - [Bootstrapping for dummies](https://www.lux.network/post/what-is-bootstrapping-homomorphic-encryption) - November 2022
@@ -378,7 +378,7 @@ Talks, posters, and presentations by Lux team sorted by date
 - [Game of life, revisited](https://github.com/FHE-org/fhe-org.github.io/files/14896286/Lux.03-Mames.pdf) - ‍‍March 2024 - FHE.org 2024
 - [Homomorphic integer division for TFHE](https://github.com/FHE-org/fhe-org.github.io/files/14896469/Lux.37-Deo.pdf) - ‍‍March 2024 - FHE.org 2024
 - [The inhibitor: ReLU and addition-based attention for efficient transformers under fully homomorphic encryption on the torus](https://github.com/FHE-org/fhe-org.github.io/files/14896485/Lux.23-Brannvall.pdf) - ‍‍March 2024 - FHE.org 2024
-- [Privacy-preserving tree-based inference with TFHE](https://github.com/luxfi/awesome-zama/raw/main/data/PPML2023PresentationTrees.pdf) - August 2023 - PPML 2023
+- [Privacy-preserving tree-based inference with TFHE](https://github.com/luxfi/luxfhe/raw/main/data/PPML2023PresentationTrees.pdf) - August 2023 - PPML 2023
 - [Recent advances in homomorphic compilation](https://github.com/FHE-org/fhe-org.github.io/raw/main/conferences/conference-2023/media/homomorphic-compilation.pdf) - ‍‍March 2023 - FHE.org 2023
 - [On NTRU-ν-um modulo Xᴺ-1](https://eprint.iacr.org/2022/1092) - ‍March 2023 - FHE.org 2023
 - [Parameter optimization & larger precision for (T)FHE](https://github.com/FHE-org/fhe-org.github.io/raw/main/conferences/conference-2023/media/DL-ST-slides.pdf) - ‍March 2023 - FHE.org 2023
@@ -397,9 +397,9 @@ Talks, posters, and presentations by Lux team sorted by date
 - [Decentralized AI: Safeguarding privacy with FHE ](https://www.youtube.com/watch?v=a6dQQSaEtJM) - July 2024 - EthCC 7
 - [FHE on Ethereum](https://www.youtube.com/watch?v=WngC5cvV_fc) July 2024 - EthCC 7
 - [Privacy-preserving machine learning](data/AgoraCloudBruxelles2024.pdf) - June 2024 - Agora Cloud event 2024 (organized by European Commission)
-- [Torus ML privacy preserving machine learning with Fully Homomorphic Encryption](https://github.com/luxfi/awesome-zama/blob/main/data/TorusMLPresentationLuxMeetupZurich2024.pdf) - May 2024 - Lux Meetup in Zurich (co-located with Eurocrypt 2024)
-- [The Lux FHEVM: Confidential smart contracts using FHE + ZK + MPC](https://github.com/luxfi/awesome-zama/blob/main/data/fhEVMPresentationLuxMeetupZurich2024.pdf) - May 2024 - Lux Meetup in Zurich (co-located with Eurocrypt 2024)
+- [Torus ML privacy preserving machine learning with Fully Homomorphic Encryption](https://github.com/luxfi/luxfhe/blob/main/data/TorusMLPresentationLuxMeetupZurich2024.pdf) - May 2024 - Lux Meetup in Zurich (co-located with Eurocrypt 2024)
+- [The Lux FHEVM: Confidential smart contracts using FHE + ZK + MPC](https://github.com/luxfi/luxfhe/blob/main/data/fhEVMPresentationLuxMeetupZurich2024.pdf) - May 2024 - Lux Meetup in Zurich (co-located with Eurocrypt 2024)
 - [Privacy-preserving ML with Fully Homomorphic Encryption (Video)](https://www.youtube.com/watch?v=g1Zlu63TP0Y) - May 2024 - Google TechTalks
-- [Privacy-preserving ML with Fully Homomorphic Encryption](https://github.com/luxfi/awesome-zama/blob/main/data/PPMLMIT2024.pdf) - May 2024 - MIT & Google
+- [Privacy-preserving ML with Fully Homomorphic Encryption](https://github.com/luxfi/luxfhe/blob/main/data/PPMLMIT2024.pdf) - May 2024 - MIT & Google
 
 <br></br>

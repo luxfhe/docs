@@ -65,4 +65,4 @@ At the end, check all the artifacts:
 - [ ] Documentation up-to-date `https://docs.lux.network/torus`
 - [ ] Lux PyPi CPU wheels `https://pypi.lux.network/cpu/torus-python/index.html`
 - [ ] Lux PyPi GPU wheels `https://pypi.lux.network/gpu/torus-python/index.html`
-- [ ] Docker images `https://hub.docker.com/r/zamafhe/torus-python/tags`
+- [ ] Docker images `https://hub.docker.com/r/luxfhe/torus-python/tags`

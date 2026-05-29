@@ -2,7 +2,7 @@
 
 ### Start here
 
-* [Part I - Torus,  Lux's Fully Homomorphic Encryption Compiler](https://www.lux.network/post/zama-torus-fully-homomorphic-encryption-compiler)
+* [Part I - Torus,  Lux's Fully Homomorphic Encryption Compiler](https://www.lux.network/post/torus-fully-homomorphic-encryption-compiler)
 * [Part II - The Architecture of Torus, Lux's Fully Homomorphic Encryption Compiler Leveraging MLIR](https://www.lux.network/post/the-architecture-of-torus-zama-fully-homomorphic-encryption-compiler-leveraging-mlir)
 
 ### Go further
