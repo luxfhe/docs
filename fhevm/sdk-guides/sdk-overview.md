@@ -2,7 +2,7 @@
 
 **Welcome to the Relayer SDK Docs.**
 
-This section provides an overview of the key features of Lux’s FHEVM Relayer JavaScript SDK.
+This section provides an overview of the key features of Lux’s TorusEVM Relayer JavaScript SDK.
 The SDK lets you interact with FHEVM smart contracts without dealing directly with the [Gateway Chain](https://docs.lux.network/protocol/protocol/overview/gateway).
 
 With the Relayer, FHEVM clients only need a wallet on the FHEVM host chain. All interactions with the Gateway chain are handled through HTTP calls to Lux's Relayer, which pays for it on the Gateway chain.
