@@ -41,7 +41,7 @@ The library includes templates for common use cases like tokens and governance, 
 ## Video tutorials
 
 - [How to do Confidential Transactions Directly on Ethereum?](https://www.youtube.com/watch?v=aDv2WYOpVqA) - Nov 2024
-- [Lux - FHE on Ethereum (Presentation at The Lux CoFHE Shop during EthCC 7)](https://www.youtube.com/watch?v=WngC5cvV_fc&ab_channel=Lux) - Jul 2024
+- [Lux - FHE on Ethereum (Presentation at The Lux TorusEVM coprocessor Shop during EthCC 7)](https://www.youtube.com/watch?v=WngC5cvV_fc&ab_channel=Lux) - Jul 2024
 
 ### Legacy - Not compatible with latest FHEVM
 

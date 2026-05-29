@@ -68,7 +68,7 @@ Torus ML and Torus abstract the details of the underlying cryptography scheme, T
 
 - **Programmable Boostrapping (PBS)** : Programmable Bootstrapping enables the homomorphic evaluation of any function of a ciphertext, with a controlled level of noise. Learn more about PBS in [this paper](https://eprint.iacr.org/2021/091).
 
-- **Ciphertext formats**: To represent encrypted values, Torus ML offers two options: the default Torus ciphertext format, which is supported by all ML models and highly optimized for performance, or the block-based TFHE-rs radix format, which supports larger values, is forward-compatible, and suitable for Blockchain applications, but is limited to certain types of ML models.
+- **Ciphertext formats**: To represent encrypted values, Torus ML offers two options: the default Torus ciphertext format, which is supported by all ML models and highly optimized for performance, or the block-based Lux-FHE radix format, which supports larger values, is forward-compatible, and suitable for Blockchain applications, but is limited to certain types of ML models.
 
 For a deeper understanding of the cryptography behind the Torus stack, refer to the [whitepaper on TFHE and Programmable Boostrapping](https://whitepaper.lux.network/) or [this series of blogs](https://www.lux.network/post/tfhe-deep-dive-part-1).
 

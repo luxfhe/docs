@@ -107,13 +107,13 @@ fn main() {
 }
 ```
 
-## TFHE-rs Ciphertext Interoperability
+## Lux-FHE Ciphertext Interoperability
 
-Starting from Torus v2.11, you can define and use modules that operate directly on TFHE-rs ciphertexts, enabling seamless interoperability between Torus and TFHE-rs in Rust.
+Starting from Torus v2.11, you can define and use modules that operate directly on Lux-FHE ciphertexts, enabling seamless interoperability between Torus and Lux-FHE in Rust.
 
-### Step 1: Define and Compile a Module with TFHE-rs Types in Python
+### Step 1: Define and Compile a Module with Lux-FHE Types in Python
 
-You can define a module in Python that uses TFHE-rs integer types as arguments and outputs. For example:
+You can define a module in Python that uses Lux-FHE integer types as arguments and outputs. For example:
 
 ```python
 from torus import fhe
@@ -153,11 +153,11 @@ my_module = MyModule.compile({"my_func": inputset})
 my_module.server.save("test_tfhers.zip", via_mlir=True)
 ```
 
-This produces a `test_tfhers.zip` artifact compatible with Rust and TFHE-rs.
+This produces a `test_tfhers.zip` artifact compatible with Rust and Lux-FHE.
 
-### Step 2: Use the Module with TFHE-rs Ciphertexts in Rust
+### Step 2: Use the Module with Lux-FHE Ciphertexts in Rust
 
-You can import and use the module in Rust, passing and receiving native TFHE-rs ciphertexts:
+You can import and use the module in Rust, passing and receiving native Lux-FHE ciphertexts:
 
 ```rust
 mod precompile {
@@ -170,11 +170,11 @@ use tfhe::shortint::parameters::v0_10::classic::gaussian::p_fail_2_minus_64::ks_
 use tfhe::{generate_keys, FheUint8};
 
 fn main() {
-    // Key generation for TFHE-rs
+    // Key generation for Lux-FHE
     let config = tfhe::ConfigBuilder::with_custom_parameters(V0_10_PARAM_MESSAGE_2_CARRY_3_KS_PBS_GAUSSIAN_2M64);
     let (client_key, _) = generate_keys(config);
 
-    // Build Torus keyset with TFHE-rs client key
+    // Build Torus keyset with Lux-FHE client key
     let mut secret_csprng = torus::common::SecretCsprng::new(0u128);
     let mut encryption_csprng = torus::common::EncryptionCsprng::new(0u128);
     let keyset = precompile::KeysetBuilder::new()
@@ -182,25 +182,25 @@ fn main() {
         .generate(secret_csprng.pin_mut(), encryption_csprng.pin_mut());
     let server_keyset = keyset.get_server();
 
-    // Encrypt inputs using TFHE-rs
+    // Encrypt inputs using Lux-FHE
     let arg_0 = FheUint8::encrypt(6u8, &client_key);
     let arg_1 = FheUint8::encrypt(4u8, &client_key);
 
-    // Evaluate the Torus circuit on TFHE-rs ciphertexts
+    // Evaluate the Torus circuit on Lux-FHE ciphertexts
     let mut server = precompile::server::my_func::ServerFunction::new();
     let output = server.invoke(&server_keyset, arg_0, arg_1);
 
-    // Decrypt the result using TFHE-rs
+    // Decrypt the result using Lux-FHE
     let decrypted: u8 = output.decrypt(&client_key);
     assert_eq!(decrypted, 10);
 }
 ```
 
-This workflow allows you to combine the high-level graph optimizations of Torus with the operator-level flexibility of TFHE-rs, all within Rust.
+This workflow allows you to combine the high-level graph optimizations of Torus with the operator-level flexibility of Lux-FHE, all within Rust.
 
 ## Notes
 
 - The module must be compiled with `via_mlir=True` to be loaded in the Rust program.
 - The Rust API is currently in beta and may evolve in future releases.
 - The Python and Rust environments must use compatible versions of the Torus toolchain.
-- When using TFHE-rs ciphertext interoperability, ensure that the TFHE-rs client key used for encryption matches the one registered in the Torus keyset for the corresponding argument.
+- When using Lux-FHE ciphertext interoperability, ensure that the Lux-FHE client key used for encryption matches the one registered in the Torus keyset for the corresponding argument.

@@ -17,7 +17,7 @@
 * [Levenshtein distance with Modules](../../frontends/torus-python/examples/levenshtein_distance/README.md)
 * [Inventory Matching System](../../frontends/torus-python/examples/prime-match/README.md)
 * [Private Information Retrieval](../../frontends/torus-python/examples/pir/README.md)
-* [TFHE-rs Interoperability](../../frontends/torus-python/examples/tfhers/README.md)
+* [Lux-FHE Interoperability](../../frontends/torus-python/examples/tfhers/README.md)
 
 #### Blog tutorials
 

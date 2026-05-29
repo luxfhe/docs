@@ -245,7 +245,7 @@ Get the serialized evaluation keys.
 
 **Args:**
 
-- <b>`include_tfhers_key`</b> (bool):  Whether to include the serialized TFHE-rs public key.
+- <b>`include_tfhers_key`</b> (bool):  Whether to include the serialized Lux-FHE public key.
 
 **Returns:**
 
@@ -261,13 +261,13 @@ ______________________________________________________________________
 get_tfhers_secret_key() → Union[bytes, NoneType]
 ```
 
-Get the secret key that decrypts TFHE-rs ciphertexts.
+Get the secret key that decrypts Lux-FHE ciphertexts.
 
-This secret key use used by the client object to encrypt TFHE-rs ciphertexts that are sent to the server, but also to decrypt outputs produced by a server-side computation, that can be a Torus ML model or a TFHE-rs program.
+This secret key use used by the client object to encrypt Lux-FHE ciphertexts that are sent to the server, but also to decrypt outputs produced by a server-side computation, that can be a Torus ML model or a Lux-FHE program.
 
 **Returns:**
 
-- <b>`bytes`</b>:  the serialized TFHE-rs secret key
+- <b>`bytes`</b>:  the serialized Lux-FHE secret key
 
 ______________________________________________________________________
 

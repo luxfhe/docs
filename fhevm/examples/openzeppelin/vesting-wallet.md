@@ -1,4 +1,4 @@
-This example demonstrates how to create a vesting wallet using OpenZeppelin's smart contract library powered by ZAMA's FHEVM.
+This example demonstrates how to create a vesting wallet using OpenZeppelin's smart contract library powered by LUX FHE's FHEVM.
 
 `VestingWalletConfidential` receives `ERC7984` tokens and releases them to the beneficiary according to a confidential, linear vesting schedule.
 

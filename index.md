@@ -27,7 +27,7 @@ print(client.decrypt(result))  # 50
 - [Core Features](./core-features/) - FHE operations
 - [Guides](./guides/) - How-to guides  
 - [Torus ML](./ml/) - Machine learning on encrypted data
-- [fhEVM](./fhevm/) - FHE for blockchain
+- [TorusEVM](./fhevm/) - FHE for blockchain
 - [Resources](./resources) - Curated links
 
 ## Related

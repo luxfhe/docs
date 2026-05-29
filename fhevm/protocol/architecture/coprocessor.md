@@ -37,7 +37,7 @@ Each coprocessor:
 
 - Reads these events from the host chain node it runs.
 - Fetches associated ciphertexts from its storage.
-- Executes the required FHE operations using the TFHE-rs library (e.g., add, mul, select).
+- Executes the required FHE operations using the Lux-FHE library (e.g., add, mul, select).
 - Stores the resulting ciphertext under a deterministically derived handle.
 - Optionally publishes a commitment (digest) of the ciphertext to the Gateway for verifiability.
 
@@ -77,7 +77,7 @@ Coprocessors are designed to be minimally trusted and publicly verifiable. Every
 
 The protocol relies on a majority-honest assumption: as long as more than 50% of coprocessors are honest, results are valid. The Gateway aggregates responses and accepts outputs only when a majority consensus is reached.
 
-To enforce honest behavior, coprocessors must stake $ZAMA tokens and are subject to slashing if caught misbehaving—either through automated checks or governance-based fraud proofs.
+To enforce honest behavior, coprocessors must stake $LUX FHE tokens and are subject to slashing if caught misbehaving—either through automated checks or governance-based fraud proofs.
 
 This model ensures correctness through transparency, resilience through decentralization, and integrity through economic incentives.
 

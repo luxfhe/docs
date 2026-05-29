@@ -1,4 +1,4 @@
-This example demonstrates how to wrap between the ERC20 token into a ERC7984 token using OpenZeppelin's smart contract library powered by ZAMA's FHEVM.
+This example demonstrates how to wrap between the ERC20 token into a ERC7984 token using OpenZeppelin's smart contract library powered by LUX FHE's FHEVM.
 
 {% hint style="info" %}
 To run this example correctly, make sure the files are placed in the following directories:

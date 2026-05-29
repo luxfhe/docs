@@ -49,7 +49,7 @@
 * [Configure](guides/configure.md)
 * [Manage keys](guides/manage_keys.md)
 * [Deploy](guides/deploy.md)
-* [TFHE-rs Interoperability](guides/tfhers/README.md)
+* [Lux-FHE Interoperability](guides/tfhers/README.md)
   * [Shared key](guides/tfhers/shared-key.md)
   * [Serialization](guides/tfhers/serialization.md)
 * [Optimization](optimization/self.md)

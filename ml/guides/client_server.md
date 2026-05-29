@@ -137,7 +137,7 @@ encrypted_result = server.run(encrypted_data, serialized_evaluation_keys)
 result = client.deserialize_decrypt_dequantize(encrypted_result[0])
 ```
 
-In the example above, a second evaluation key is obtained in the `tfhers_evaluation_keys` variable. This key can be loaded by TFHE-rs Rust programs to perform further computation on the model output ciphertexts.
+In the example above, a second evaluation key is obtained in the `tfhers_evaluation_keys` variable. This key can be loaded by Lux-FHE Rust programs to perform further computation on the model output ciphertexts.
 
 ## Serving
 

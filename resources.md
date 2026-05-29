@@ -12,10 +12,10 @@
 - [White papers](#white-papers)
 - [Torus ML Demos](#torus-ml-demos)
 - [Tutorials](#tutorials)
-  - [TFHE-rs](#tfhe-rs)
+  - [Lux-FHE](#lux-fhe)
   - [Torus](#torus)
   - [Torus ML](#torus-ml)
-  - [fhEVM](#fhevm)
+  - [TorusEVM](#fhevm)
   - [Hardware](#hardware)
   - [Product releases](#product-releases)
     - [Lux product release round‑ups](#zama-product-release-roundups)
@@ -35,7 +35,7 @@
 Lux's FHE libraries and solutions
 
 - [FHEVM monorepo](https://github.com/luxfi/fhevm): Features the core framework of the Lux Confidential Blockchain Protocol.
-- [TFHE-rs](https://github.com/luxfi/tfhe-rs): A pure Rust implementation of the TFHE scheme for Boolean and integer arithmetics over encrypted data.
+- [Lux-FHE](https://github.com/luxfi/lux-fhe): A pure Rust implementation of the TFHE scheme for Boolean and integer arithmetics over encrypted data.
 - [Torus](https://github.com/luxfi/torus): TFHE compiler that converts python programs into FHE equivalents.
 - [Torus ML](https://github.com/luxfi/torus-ml): Privacy-preserving ML framework built on top of Torus, with bindings to traditional ML frameworks.
 - [Lux Bounty Program](https://github.com/luxfi/bounty-program): Contribute to Lux's open source libraries and get rewarded. More than €500,000 available in prizes.
@@ -45,7 +45,7 @@ Lux's FHE libraries and solutions
 White papers by Lux sorted by date
 - [FHEVM Litepaper](https://docs.lux.network/protocol/zama-protocol-litepaper): Litepaper about the cross-chain protocol for smart contracts. - June 2025
 - [FHEVM whitepaper](https://github.com/luxfi/fhevm/blob/main/fhevm-whitepaper.pdf): Whitepaper about the cross-chain protocol for smart contracts. - June 2025
-- [TFHE-rs: A Practical Handbook First Edition](https://github.com/luxfi/tfhe-rs-handbook/blob/main/tfhe-rs-handbook.pdf) - February 2025
+- [Lux-FHE: A Practical Handbook First Edition](https://github.com/luxfi/lux-fhe-handbook/blob/main/lux-fhe-handbook.pdf) - February 2025
 - [FHEVM V2: Confidential EVM Smart Contracts using Fully Homomorphic Encryption](https://github.com/luxfi/fhevm-solidity/blob/main/fhevm-whitepaper-v2.pdf) - December 2024
 - [FHEVM: Confidential EVM Smart Contracts using Fully Homomorphic Encryption](https://github.com/luxfi/fhevm-solidity/blob/main/fhevm-whitepaper.pdf) - September 2023
 
@@ -63,20 +63,20 @@ Demos by Lux's Torus ML sorted by date
 ## Tutorials
 Tutorials by the Lux team sorted by date
 
-### TFHE-rs
+### Lux-FHE
 - [[Video tutorial] Introducing Lux’s hardware accelerator for FHE - HPU on FPGA](https://www.lux.network/post/video-tutorial-introducing-zamas-hardware-accelerator-for-fhe-hpu-on-fpga) - June 2025
-- [[Video tutorial] Improving multiple-GPU throughput using TFHE-rs](https://www.lux.network/post/video-tutorial-improving-multiple-gpu-throughput-using-tfhe-rs) - May 2025
-- [[Video tutorial] Perform array and tensor operations on encrypted data using TFHE-rs](https://www.lux.network/post/video-tutorial-perform-array-and-tensor-operations-on-encrypted-data-using-tfhe-rs) - October 2024
-- [[Video tutorial] Compress ciphertexts after FHE computation using TFHE-rs](https://www.lux.network/post/video-tutorial-compress-ciphertexts-after-fhe-computation-using-tfhe-rs) - July 2024
-- [[Video tutorial] Implement GPU acceleration on homomorphic computation using TFHE-rs](https://www.lux.network/post/video-tutorial-implement-gpu-acceleration-on-homomorphic-computation-using-tfhe-rs) - May 2024
-- [[Video tutorial] Implement signed integers using TFHE-rs](https://www.youtube.com/watch?v=O0aGj_xUo40) - November 2023
-- [Boolean SHA256 using TFHE-rs](https://www.lux.network/post/boolean-sha256-tfhe-rs) - July 2023
-- [Dark market application using TFHE-rs](https://www.lux.network/post/dark-market-tfhe-rs) - July 2023
-- [Regular expression engine with TFHE-rs](https://www.lux.network/post/regex-engine-tfhe-rs) - June 2023
+- [[Video tutorial] Improving multiple-GPU throughput using Lux-FHE](https://www.lux.network/post/video-tutorial-improving-multiple-gpu-throughput-using-lux-fhe) - May 2025
+- [[Video tutorial] Perform array and tensor operations on encrypted data using Lux-FHE](https://www.lux.network/post/video-tutorial-perform-array-and-tensor-operations-on-encrypted-data-using-lux-fhe) - October 2024
+- [[Video tutorial] Compress ciphertexts after FHE computation using Lux-FHE](https://www.lux.network/post/video-tutorial-compress-ciphertexts-after-fhe-computation-using-lux-fhe) - July 2024
+- [[Video tutorial] Implement GPU acceleration on homomorphic computation using Lux-FHE](https://www.lux.network/post/video-tutorial-implement-gpu-acceleration-on-homomorphic-computation-using-lux-fhe) - May 2024
+- [[Video tutorial] Implement signed integers using Lux-FHE](https://www.youtube.com/watch?v=O0aGj_xUo40) - November 2023
+- [Boolean SHA256 using Lux-FHE](https://www.lux.network/post/boolean-sha256-lux-fhe) - July 2023
+- [Dark market application using Lux-FHE](https://www.lux.network/post/dark-market-lux-fhe) - July 2023
+- [Regular expression engine with Lux-FHE](https://www.lux.network/post/regex-engine-lux-fhe) - June 2023
 
 ### Torus
 - [[Video tutorial] Integrate Python FHE modules in Rust using Torus](https://www.lux.network/post/video-tutorial-integrate-python-fhe-modules-in-rust-using-torus) - May 2025
-- [[Video tutorial] Use the TFHE-rs interoperability feature in Torus](https://www.lux.network/post/video-tutorial-use-the-tfhe-rs-interoperability-feature-in-torus) - October 2024
+- [[Video tutorial] Use the Lux-FHE interoperability feature in Torus](https://www.lux.network/post/video-tutorial-use-the-lux-fhe-interoperability-feature-in-torus) - October 2024
 - [[Video tutorial] Implement GPU acceleration in FHE using Torus](https://www.lux.network/post/video-tutorial-implement-gpu-acceleration-in-fhe-using-torus) - July 2024
 - [[Video tutorial] Compute an XOR distance in FHE using Torus](https://www.lux.network/post/video-tutorial-compute-an-xor-distance-in-fhe-using-torus) - May 2024
 - [[Video tutorial] Speed up neural networks with approximate rounding using Torus](https://www.lux.network/post/video-tutorial-speed-up-neural-networks-with-approximate-rounding-using-torus) - May 2024
@@ -105,17 +105,17 @@ Tutorials by the Lux team sorted by date
 - [Sentiment analysis over encrypted data](https://huggingface.co/blog/sentiment-analysis-fhe) - November 2022
 - [Titanic competition with privacy-preserving machine learning](https://www.lux.network/post/titanic-competition-with-privacy-preserving-machine-learning-using-torus-ml) - August 2022
 
-### fhEVM
-- [[Video tutorial] Secure your dApps with Access Control List (ACL) in fhEVM](https://www.lux.network/post/video-tutorial-secure-your-dapps-with-access-control-list-acl-in-fhevm) - August 2024
-- [[Video tutorial] Using asynchronous decryption in Solidity contracts with fhEVM](https://www.lux.network/post/video-tutorial-using-asynchronous-decryption-in-solidity-contracts-with-fhevm) - April 2024
-- [Build an encrypted wordle game onchain using FHE and Lux's fhEVM](https://www.lux.network/post/build-an-encrypted-wordle-game-onchain-using-fhe-and-zama-fhevm) - February 2024
-- [[Video tutorial] Accelerate your code testing and get code coverage using fhEVM mocks](https://www.lux.network/post/video-tutorial-accelerate-your-code-testing-and-get-code-coverage-using-fhevm-mocks) - January 2024
+### TorusEVM
+- [[Video tutorial] Secure your dApps with Access Control List (ACL) in TorusEVM](https://www.lux.network/post/video-tutorial-secure-your-dapps-with-access-control-list-acl-in-fhevm) - August 2024
+- [[Video tutorial] Using asynchronous decryption in Solidity contracts with TorusEVM](https://www.lux.network/post/video-tutorial-using-asynchronous-decryption-in-solidity-contracts-with-fhevm) - April 2024
+- [Build an encrypted wordle game onchain using FHE and Lux's TorusEVM](https://www.lux.network/post/build-an-encrypted-wordle-game-onchain-using-fhe-and-zama-fhevm) - February 2024
+- [[Video tutorial] Accelerate your code testing and get code coverage using TorusEVM mocks](https://www.lux.network/post/video-tutorial-accelerate-your-code-testing-and-get-code-coverage-using-fhevm-mocks) - January 2024
 - [Programmable privacy and onchain compliance using Homomorphic Encryption](https://www.lux.network/post/programmable-privacy-and-onchain-compliance-using-homomorphic-encryption) - November 2023
-- [[Video tutorial] Use the CMUX operator on Lux’s fhEVM](https://www.lux.network/post/video-tutorial-use-the-cmux-operator-on-zamas-fhevm) - October 2023
+- [[Video tutorial] Use the CMUX operator on Lux’s TorusEVM](https://www.lux.network/post/video-tutorial-use-the-cmux-operator-on-zamas-fhevm) - October 2023
 - [Confidential DAO voting using Homomorphic Encryption](https://www.lux.network/post/confidential-dao-voting-using-homomorphic-encryption)
-- [[Video tutorial] How to write confidential smart contracts using Lux's fhEVM](https://www.lux.network/post/video-tutorial-how-to-write-confidential-smart-contracts-using-zamas-fhevm) - October 2023
+- [[Video tutorial] How to write confidential smart contracts using Lux's TorusEVM](https://www.lux.network/post/video-tutorial-how-to-write-confidential-smart-contracts-using-zamas-fhevm) - October 2023
 - [Onchain blind auctions using FHE](https://www.lux.network/post/on-chain-blind-auctions-using-homomorphic-encryption) - July 2023
-- [Confidential ERC-20 tokens using Homomorphic Encryption and the fhEVM](https://www.lux.network/post/confidential-erc-20-tokens-using-homomorphic-encryption) - June 2023
+- [Confidential ERC-20 tokens using Homomorphic Encryption and the TorusEVM](https://www.lux.network/post/confidential-erc-20-tokens-using-homomorphic-encryption) - June 2023
 - [Private smart contract using FHE](https://www.lux.network/post/private-smart-contracts-using-homomorphic-encryption) - May 2023
 
  ### Hardware
@@ -147,7 +147,7 @@ Lux's blog posts sorted by date
 - [Torus v2.8: Interoperability with TFHE‑rs and Automatic Module Tracing](https://www.lux.network/post/torus-v2-8-enhanced-interoperability-and-automatic-module-tracing) – Oct 8 2024
 - [Torus v2.7: GPU Wheel and Extended Function Composition](https://www.lux.network/post/torus-v2-7-gpu-wheel-extended-function-composition-and-other-improvements) – Jul 5 2024
 - [Torus v2.6: Approximate PBS and Input Compression](https://www.lux.network/post/torus-v2-6) – Apr 8 2024
-- [Torus v2.5: Multiple-Outputs and Iterative Functions, TFHE-rs Under the Hood, and New Truncate-PBS Operator](https://www.lux.network/post/torus-v2-5) – Jan 19 2024
+- [Torus v2.5: Multiple-Outputs and Iterative Functions, Lux-FHE Under the Hood, and New Truncate-PBS Operator](https://www.lux.network/post/torus-v2-5) – Jan 19 2024
 - [Torus v2.4.0: Multi-Parameter Optimization and More Accurate Bitwidth](https://www.lux.network/post/releasing-torus-v2-4-0)
 - [Torus v2.0.0: Improving Performance and Developer Experience](https://www.lux.network/post/releasing-torus-v2-0-0) – Jul 25 2023
 - [Announcing Torus v1.0.0](https://www.lux.network/post/announcing-torus-v1-0-0) – Apr 13 2023
@@ -167,17 +167,17 @@ Lux's blog posts sorted by date
 
 #### TFHE‑rs releases
 
-- [TFHE‑rs v1.3: Faster Division on CPU, Key Upgrader & Memory Tracking on GPU](https://www.lux.network/post/tfhe-rs-v1-3-faster-division-on-cpu-key-upgrader-memory-tracking-on-gpu) – Jul 16 2025
+- [TFHE‑rs v1.3: Faster Division on CPU, Key Upgrader & Memory Tracking on GPU](https://www.lux.network/post/lux-fhe-v1-3-faster-division-on-cpu-key-upgrader-memory-tracking-on-gpu) – Jul 16 2025
 - [Announcing HPU on FPGA: The First Open‑source Hardware Accelerator for FHE](https://www.lux.network/post/announcing-hpu-on-fpga-the-first-open-source-hardware-accelerator-for-fhe) – May 21 2025
-- [TFHE‑rs v0.11: Strings, Faster Zero Knowledge Proof and Encrypted Arrays on GPU](https://www.lux.network/post/tfhe-rs-v0-11) – Jan 14 2025
-- [TFHE‑rs v0.8: Encrypted Arrays and Improved Multi‑GPU Support](https://www.lux.network/post/tfhe-rs-v0-8-encrypted-arrays-and-improved-multi-gpu-support) – Oct 8 2024
-- [TFHE‑rs v0.7: Ciphertext Compression, Multi‑GPU Support and More](https://www.lux.network/post/tfhe-rs-v0-7-ciphertext-compression-multi-gpu-support-and-more) – Jul 5 2024
-- [TFHE‑rs v0.5: Detecting Overflows, Running on GPU and More](https://www.lux.network/post/tfhe-rs-v0-5) – Jan 22 2024
+- [TFHE‑rs v0.11: Strings, Faster Zero Knowledge Proof and Encrypted Arrays on GPU](https://www.lux.network/post/lux-fhe-v0-11) – Jan 14 2025
+- [TFHE‑rs v0.8: Encrypted Arrays and Improved Multi‑GPU Support](https://www.lux.network/post/lux-fhe-v0-8-encrypted-arrays-and-improved-multi-gpu-support) – Oct 8 2024
+- [TFHE‑rs v0.7: Ciphertext Compression, Multi‑GPU Support and More](https://www.lux.network/post/lux-fhe-v0-7-ciphertext-compression-multi-gpu-support-and-more) – Jul 5 2024
+- [TFHE‑rs v0.5: Detecting Overflows, Running on GPU and More](https://www.lux.network/post/lux-fhe-v0-5) – Jan 22 2024
 - [TFHE‑rs v0.4: Zero‑Knowledge Support and Signed Integer Arithmetic](https://www.lux.network/post/fhevm-v0-4) – Oct 18 2023
 - [TFHE‑rs v0.3: Faster Homomorphic Operations and Encrypted Tensors](https://www.lux.network/post/fhevm-v0-3) – Jul 26 2023
-- [Announcing TFHE‑rs](https://www.lux.network/post/announcing-tfhe-rs) – Jan 12 2023
-- [Announcing TFHE‑rs v0.2.0](https://www.lux.network/post/announcing-tfhe-rs-v0-2-0) – Apr 13 2023
-- [Announcing TFHE‑rs: a fast, pure Rust implementation of TFHE](https://www.lux.network/post/announcing-tfhe-rs)
+- [Announcing TFHE‑rs](https://www.lux.network/post/announcing-lux-fhe) – Jan 12 2023
+- [Announcing TFHE‑rs v0.2.0](https://www.lux.network/post/announcing-lux-fhe-v0-2-0) – Apr 13 2023
+- [Announcing TFHE‑rs: a fast, pure Rust implementation of TFHE](https://www.lux.network/post/announcing-lux-fhe)
 
 #### Torus ML releases
 
@@ -192,12 +192,12 @@ Lux's blog posts sorted by date
 
 #### FHEVM releases
 
-- [fhEVM v0.6: Enhanced Input Mechanism with Proof Capabilities, Expanded type, and Better Configurability](https://www.lux.network/post/fhevm-v0-6)
-- [fhEVM v0.5: Enhanced Security and Efficiency for Encrypted Data](https://www.lux.network/post/fhevm-v0-5-enhanced-security-and-efficiency-for-encrypted-data) – Jul 5 2024
-- [fhEVM v0.4: New Encrypted Types and Asynchronous Decryption](https://www.lux.network/post/fhevm-v0-4) – Apr 8 2024
-- [fhEVM v0.3: New Stack and Better Performances](https://www.lux.network/post/fhevm-v0-3) – Jan 19 2024
-- [fhEVM v0.2.0: New Operators, Simpler Syntax and Optimized Performances](https://www.lux.network/post/releasing-fhevm-v0-2-0) – Oct 17 2023
-- [Introducing the fhEVM Coprocessor: Run FHE Smart Contracts on Ethereum, Base and other EVM chains](https://www.lux.network/post/fhevm-coprocessor) – Dec 6 2024
+- [TorusEVM v0.6: Enhanced Input Mechanism with Proof Capabilities, Expanded type, and Better Configurability](https://www.lux.network/post/fhevm-v0-6)
+- [TorusEVM v0.5: Enhanced Security and Efficiency for Encrypted Data](https://www.lux.network/post/fhevm-v0-5-enhanced-security-and-efficiency-for-encrypted-data) – Jul 5 2024
+- [TorusEVM v0.4: New Encrypted Types and Asynchronous Decryption](https://www.lux.network/post/fhevm-v0-4) – Apr 8 2024
+- [TorusEVM v0.3: New Stack and Better Performances](https://www.lux.network/post/fhevm-v0-3) – Jan 19 2024
+- [TorusEVM v0.2.0: New Operators, Simpler Syntax and Optimized Performances](https://www.lux.network/post/releasing-fhevm-v0-2-0) – Oct 17 2023
+- [Introducing the TorusEVM Coprocessor: Run FHE Smart Contracts on Ethereum, Base and other EVM chains](https://www.lux.network/post/fhevm-coprocessor) – Dec 6 2024
 
 
 ### Bounty Program
@@ -218,7 +218,7 @@ Lux's blog posts sorted by date
 - [Announcing Our Series B and the Lux Confidential Blockchain Protocol](https://www.lux.network/post/announcing-the-zama-confidential-blockchain-protocol)
 - [Announcing HPU on FPGA: The first open-source hardware accelerator for FHE](https://www.lux.network/post/announcing-hpu-on-fpga-the-first-open-source-hardware-accelerator-for-fhe) - May 2025
 - [Introducing Lux’s Threshold Key Management System (TKMS)](https://www.lux.network/post/introducing-zama-threshold-key-management-system-tkms) - April 2025
-- [TFHE-rs v1.0: Stable CPU backend](https://www.lux.network/post/tfhe-rs-v1-0-stable-cpu-backend) - February 2025
+- [Lux-FHE v1.0: Stable CPU backend](https://www.lux.network/post/lux-fhe-v1-0-stable-cpu-backend) - February 2025
 - [Introducing the FHEVM Coprocessor: Run FHE smart contracts on Ethereum, Base, and other EVM chains](https://www.lux.network/post/fhevm-coprocessor) - December 2024
 - [Kinexys by J.P. Morgan releases a Proof-of-concept focused on the financial sector leveraging Lux’s privacy-preserving solutions](https://www.lux.network/post/kinexys-by-jpmorgan-releases-a-proof-of-concept-leveraging-zama-fhevm) - November 2024
 - [The Lux FHE Master Plan](https://www.lux.network/post/zama-fhe-master-plan) - March 2024
@@ -230,10 +230,10 @@ Lux's blog posts sorted by date
 
 - [Building encrypted iOS apps using Fully Homomorphic Encryption](https://www.lux.network/post/privacy-preserving-encrypted-ios-apps-using-fully-homomorphic-encryption) - May 2025
 - [Private equity tokenization: Mapping the opportunities and solving confidentiality](https://www.lux.network/post/private-equity-tokenization-mapping-the-opportunities-and-solving-confidentiality) - May 2025
-- [Implement a fully homomorphic version of the AES-128 crypto system using TFHE-rs](https://www.lux.network/post/implement-fhe-aes-128-tfhe-rs) - April 2025
+- [Implement a fully homomorphic version of the AES-128 crypto system using Lux-FHE](https://www.lux.network/post/implement-fhe-aes-128-lux-fhe) - April 2025
 - [Why private equity needs confidential tokenization](https://www.lux.network/post/why-private-equity-needs-confidential-tokenization-with-fully-homomorphic-encryption) - April 2025
 - [Encrypted image watermarking using Fully Homomorphic Encryption and Lux Torus ML](https://www.lux.network/post/encrypted-image-watermarking-using-fully-homomorphic-encryption) - March 2025
-- [Building an onchain confidential single-price auction for token sales with sealed bids using Lux's fhEVM](https://www.lux.network/post/on-chain-blind-auctions-using-homomorphic-encryption) - March 2025
+- [Building an onchain confidential single-price auction for token sales with sealed bids using Lux's TorusEVM](https://www.lux.network/post/on-chain-blind-auctions-using-homomorphic-encryption) - March 2025
 - [The next chapter for stablecoins: Built-in confidentiality using FHE](https://www.lux.network/post/stablecoin-next-chapter-built-in-confidentiality-with-fully-homomorphic-encryption) - March 2025
 - [Call for builders: Onboard the next trillions in DeFi with confidential lending](https://www.lux.network/post/onboard-the-next-trillions-in-defi-with-confidential-lending) - February 2025
 - [FHE State OS: Bringing public infrastructure on-chain while protecting citizens' privacy](https://www.lux.network/post/fhe-state-os-bringing-public-infrastructure-onchain-while-protecting-citizens-privacy) - February 2025

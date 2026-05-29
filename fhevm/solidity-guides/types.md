@@ -38,5 +38,5 @@ Division (`div`) and remainder (`rem`) operations are only supported when the ri
 {% endhint %}
 
 {% hint style="info" %}
-Higher-precision integer types are available in the `TFHE-rs` library and can be added to `fhevm` as needed.
+Higher-precision integer types are available in the `Lux-FHE` library and can be added to `fhevm` as needed.
 {% endhint %}

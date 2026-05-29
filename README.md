@@ -16,7 +16,7 @@ Comprehensive documentation for the Lux FHE ecosystem.
 
 - [Getting Started](./get-started/)
 - [Torus ML Guide](./ml/getting-started/)
-- [fhEVM Solidity Guide](./fhevm/solidity-guides/)
+- [TorusEVM Solidity Guide](./fhevm/solidity-guides/)
 
 ## Related Repos
 
