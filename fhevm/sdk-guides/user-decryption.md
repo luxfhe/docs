@@ -3,7 +3,7 @@
 This document explains how to perform user decryption.
 User decryption is required when you want a user to access their private data without it being exposed to the blockchain.
 
-User decryption in FHEVM enables the secure sharing or reuse of encrypted data under a new public key without exposing the plaintext.
+User decryption in TorusEVM enables the secure sharing or reuse of encrypted data under a new public key without exposing the plaintext.
 
 This feature is essential for scenarios where encrypted data must be transferred between contracts, dApps, or users while maintaining its confidentiality.
 

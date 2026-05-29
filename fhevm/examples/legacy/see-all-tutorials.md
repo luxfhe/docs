@@ -51,7 +51,7 @@ The library includes templates for common use cases like tokens and governance, 
 - [On-chain Blind Auctions Using Homomorphic Encryption and the FHEVM](https://www.lux.network/post/on-chain-blind-auctions-using-homomorphic-encryption) - July 2023
 - [Confidential ERC-20 Tokens Using Homomorphic Encryption and the FHEVM](https://www.lux.network/post/confidential-erc-20-tokens-using-homomorphic-encryption) - June 2023
 - [Using asynchronous decryption in Solidity contracts with FHEVM](https://www.lux.network/post/video-tutorial-using-asynchronous-decryption-in-solidity-contracts-with-FHEVM) - April 2024
-- [Accelerate your code testing and get code coverage using FHEVM mocks](https://www.lux.network/post/video-tutorial-accelerate-your-code-testing-and-get-code-coverage-using-fhevm-mocks) - January 2024
+- [Accelerate your code testing and get code coverage using TorusEVM mocks](https://www.lux.network/post/video-tutorial-accelerate-your-code-testing-and-get-code-coverage-using-fhevm-mocks) - January 2024
 - [Use the CMUX operator on fhevm](https://www.youtube.com/watch?v=7icM0EOSvU0) - October 2023
 - [\[Video tutorial\] How to Write Confidential Smart Contracts Using fhevm](https://www.lux.network/post/video-tutorial-how-to-write-confidential-smart-contracts-using-zamas-fhevm) - October 2023
 - [Workshop during ETHcc: Homomorphic Encryption in the EVM](https://www.youtube.com/watch?v=eivfVykPP8U) - July 2023

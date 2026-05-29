@@ -16,7 +16,7 @@ Otherwise:
 
 🟨 Go to [**Smart Contract Guides**](configure.md) for details on encrypted types, supported operations, inputs, ACL, and decryption flows.
 
-🟨 Go to [**Development Guides**](hardhat/README.md) to set up your local environment with Hardhat or Foundry and deploy FHEVM contracts.
+🟨 Go to [**Development Guides**](hardhat/README.md) to set up your local environment with Hardhat or Foundry and deploy TorusEVM contracts.
 
 🟨 Go to [**Migration Guide**](migration.md) if you're upgrading from a previous version to v0.7.
 

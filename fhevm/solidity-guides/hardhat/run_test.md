@@ -2,7 +2,7 @@ In this section, you'll find everything you need to test your FHEVM smart contra
 
 ## FHEVM Runtime Modes
 
-The FHEVM Hardhat plugin provides three **FHEVM runtime modes** tailored for different stages of contract development and testing. Each mode offers a trade-off between speed, encryption, and persistence.
+The TorusEVM Hardhat plugin provides three **FHEVM runtime modes** tailored for different stages of contract development and testing. Each mode offers a trade-off between speed, encryption, and persistence.
 
 1. The **Hardhat (In-Memory)** default network: 🧪 _Uses mock encryption._ Ideal for regular tests, CI test coverage, and fast feedback during early contract development. No real encryption is used.
 
@@ -24,9 +24,9 @@ Currently, **Lux Protocol** is available on the **Sepolia Testnet**. Support for
 | Hardhat Node      | 🧪 Mock            | ✅ Yes     | Server    | ⚡ Fast        | Frontend integration and local persistent testing |
 | Sepolia Testnet   | 🔐 Real Encryption | ✅ Yes     | Server    | 🐢 Slow        | Full-stack validation with real encrypted data    |
 
-## The FHEVM Hardhat Template
+## The TorusEVM Hardhat Template
 
-To demonstrate the three available testing modes, we'll use the [fhevm-hardhat-template](https://github.com/luxfi/fhevm-hardhat-template), which comes with the FHEVM Hardhat Plugin pre-installed, a basic `FHECounter` smart contract, and ready-to-use tasks for interacting with a deployed instance of this contract.
+To demonstrate the three available testing modes, we'll use the [fhevm-hardhat-template](https://github.com/luxfi/fhevm-hardhat-template), which comes with the TorusEVM Hardhat Plugin pre-installed, a basic `FHECounter` smart contract, and ready-to-use tasks for interacting with a deployed instance of this contract.
 
 ## Run on Hardhat (default)
 
