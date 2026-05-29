@@ -52,12 +52,12 @@ White papers by Lux sorted by date
 ## Torus ML Demos
 Demos by Lux's Torus ML sorted by date
 
-- [Encrypted DNA testing using Fully Homomorphic Encryption](https://huggingface.co/spaces/zama-fhe/encrypted_dna)
-- [Encrypted anonymization using FHE](https://huggingface.co/spaces/zama-fhe/encrypted-anonymization)
-- [Encrypted credit card approval prediction using FHE](https://huggingface.co/spaces/zama-fhe/credit_card_approval_prediction)
-- [Encrypted sentiment analysis using FHE](https://huggingface.co/spaces/zama-fhe/encrypted_sentiment_analysis)
-- [Encrypted health prediction using FHE](https://huggingface.co/spaces/zama-fhe/encrypted_health_prediction)
-- [Encrypted image filtering using FHE](https://huggingface.co/spaces/zama-fhe/encrypted_image_filtering)
+- [Encrypted DNA testing using Fully Homomorphic Encryption](https://huggingface.co/spaces/luxfhe)
+- [Encrypted anonymization using FHE](https://huggingface.co/spaces/luxfhe)
+- [Encrypted credit card approval prediction using FHE](https://huggingface.co/spaces/luxfhe)
+- [Encrypted sentiment analysis using FHE](https://huggingface.co/spaces/luxfhe)
+- [Encrypted health prediction using FHE](https://huggingface.co/spaces/luxfhe)
+- [Encrypted image filtering using FHE](https://huggingface.co/spaces/luxfhe)
 <br></br>
 
 ## Tutorials

@@ -9,16 +9,16 @@
 
 ### Live demos on Hugging Face:
 
-- [Encrypted anonymization](https://huggingface.co/spaces/zama-fhe/encrypted-anonymization): Encrypted anonymization uses Fully Homomorphic Encryption (FHE) to anonymize personally identifiable information (PII) within encrypted documents, enabling computations to be performed on the encrypted data.
-  - Check the [code](https://huggingface.co/spaces/zama-fhe/encrypted-anonymization/tree/main)
-- [Credit card approval](https://huggingface.co/spaces/zama-fhe/credit_card_approval_prediction): Predicting credit scoring card approval application in which sensitive data can be shared and analyzed without exposing the actual information to neither the three parties involved, nor the server processing it.
-  - Check the [code](https://huggingface.co/spaces/zama-fhe/credit_card_approval_prediction/tree/main)
+- [Encrypted anonymization](https://huggingface.co/spaces/luxfhe): Encrypted anonymization uses Fully Homomorphic Encryption (FHE) to anonymize personally identifiable information (PII) within encrypted documents, enabling computations to be performed on the encrypted data.
+  - Check the [code](https://huggingface.co/spaces/luxfhe/tree/main)
+- [Credit card approval](https://huggingface.co/spaces/luxfhe): Predicting credit scoring card approval application in which sensitive data can be shared and analyzed without exposing the actual information to neither the three parties involved, nor the server processing it.
+  - Check the [code](https://huggingface.co/spaces/luxfhe/tree/main)
 - [Sentiment analysis with transformers](https://huggingface.co/blog/sentiment-analysis-fhe): predicting if an encrypted tweet / short message is positive, negative or neutral, using FHE.
-  - Check the [code](https://huggingface.co/spaces/zama-fhe/encrypted_sentiment_analysis/tree/main) and the [blog post](https://huggingface.co/blog/sentiment-analysis-fhe)
-- [Health diagnosis](https://huggingface.co/spaces/zama-fhe/encrypted_health_prediction): giving a diagnosis using FHE to preserve the privacy of the patient based on a patient's symptoms, history and other health factors.
-  - Check the [code](https://huggingface.co/spaces/zama-fhe/encrypted_health_prediction/tree/main)
-- [Encrypted image filtering](https://huggingface.co/spaces/zama-fhe/encrypted_image_filtering): filtering encrypted images by applying filters such as black-and-white, ridge detection, or your own filter.
-  - Check the [code](https://huggingface.co/spaces/zama-fhe/encrypted_image_filtering/tree/main)
+  - Check the [code](https://huggingface.co/spaces/luxfhe/tree/main) and the [blog post](https://huggingface.co/blog/sentiment-analysis-fhe)
+- [Health diagnosis](https://huggingface.co/spaces/luxfhe): giving a diagnosis using FHE to preserve the privacy of the patient based on a patient's symptoms, history and other health factors.
+  - Check the [code](https://huggingface.co/spaces/luxfhe/tree/main)
+- [Encrypted image filtering](https://huggingface.co/spaces/luxfhe): filtering encrypted images by applying filters such as black-and-white, ridge detection, or your own filter.
+  - Check the [code](https://huggingface.co/spaces/luxfhe/tree/main)
 
 ### Code examples on Github:
 
